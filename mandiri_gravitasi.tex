@@ -1,0 +1,170 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.1cm,right=0.7cm,top=0.2cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\begin{document}
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{3pt}
+%-----------------------------------------------
+
+ \centering
+  \renewcommand{\arraystretch}{2}
+  \begin{tabular}{  |>{\centering\arraybackslash}m{4cm}|%
+                    >{\centering\arraybackslash}m{11cm}|%
+                    >{\centering\arraybackslash}m{4cm}|%
+  }
+    \hline
+    \vspace{0.15cm} 
+    \tikz[baseline=(char.base)]{
+\draw[green!80!black](-0.3,-0.2) rectangle (0.3,0.2);
+\node[green](char){line};
+} \small{ arifstwan} &       \textbf{Soal Modul Termodinamika } 
+          &  arif.stwan@gmail.com
+  \\ \hline 
+    
+  \end{tabular}
+\setlength{\columnsep}{0pt}
+\vspace{0.15cm}
+
+\begin{multicols*} {3} 
+\newcommand{\tikzmark}[2]{\tikz[remember picture,baseline=(#1.base)]{\node[inner sep=0pt] (#1) {#2};}} 
+
+
+\begin{enumerate}[itemsep=0mm]
+
+%------------ nomor 1----------
+\item Tentukan bagian yang dicari dari perbandingan berikut!
+\begin{enumerate}[label=\alph*)]
+\item $ \left(\frac{3}{T_1}\right)^2=\left(\frac{1}{9}\right)^3$
+\item $\left(\frac{T_2}{8}\right)^2=\left(\frac{3}{12}\right)^3$
+\item
+$\left(\frac{1}{27} \right)^2=\left(\frac{R_2}{18}\right)^3$
+\end{enumerate}
+
+\item Gunakan cara $$ x=\frac{d\sqrt{m_1}}{\sqrt{m_1}+\sqrt{m_2}}$$ 
+dimana
+
+$d$: jarak dua benda awal 
+
+$x$ : jarak dari yang ditanyakan dari $m_1$
+
+$m_1, m_2$ : massa dua benda awal.
+\begin{enumerate}[label=\alph*)]
+
+\item Dua buah benda bermassa 4kg dan 9 kg berada pada jarak 15 m. Ada benda bermassa 2,78 kg diletakkan di antara kedua benda. Berapakah jarak benda ketiga (terakhir) dari benda 4 kg, jika besar gaya yang dirasakan adalah NOL . . . .
+\item Dua buah benda A dan B bermassa 81 juta kg dan 144 juta kg dipisahkan pada jarak 42 juta km. Di manakah letak agar \textbf{medan gravitasi} totalnya NOL ? . . . . .
+\end{enumerate}
+\end{enumerate}   
+
+Pembahasan 
+\begin{enumerate}[itemsep=0mm]
+\item 
+\begin{enumerate}[label=\alph*)]
+\item Karena yang dihitung adalah ruas kiri, pastikan tidak ada pangkatnya yang kiri
+\begin{align*} \left(\frac{3}{T_1}\right)^2&=\left(\frac{1}{9}\right)^3 \\
+\sqrt{\left(\frac{3}{T_1}\right)^2}&=\sqrt{\left(\frac{1}{9}\right)^3} \\
+\left(\frac{3}{T_1}\right)&=\left(\frac{1}{3}\right)^3 \\
+\left(\frac{3}{T_1}\right)&=\left(\frac{1}{27}\right) \\
+\left(\frac{3}{1}\right)&=\left(\frac{T_1}{3}\right) \\
+T_1&=3
+\end{align*}
+\item \begin{align*}
+\left(\frac{T_2}{8}\right)^2&=\left(\frac{3}{12}\right)^3\\
+\sqrt{\left(\frac{T_2}{8}\right)}^2&=\sqrt{\left(\frac{3}{12}\right)^3}\\
+\left(\frac{T_2}{8}\right)&=\sqrt{\left(\frac{\coret{3}^1}{\coret{12}^4}\right)^3}\\
+\left(\frac{T_2}{8}\right)&=\sqrt{\left(\frac{1}{4}\right)^3}\\
+\left(\frac{T_2}{8}\right)&=\left(\frac{1}{2}\right)^3\\
+\left(\frac{T_2}{8}\right)&=\left(\frac{1}{8}\right)\\
+T_2 &=1\\
+\end{align*}
+
+\item
+\begin{align*}
+
+
+
+\left(\frac{1}{27} \right)^2=\left(\frac{R_2}{18}\right)^3$
+\end{enumerate}
+\end{enumerate}
+\end{multicols*}
+
+ \end{document}

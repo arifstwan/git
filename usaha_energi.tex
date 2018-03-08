@@ -1,0 +1,330 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=0.7cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\begin{document}
+\begin{center} \textbf{BAB USAHA DAN ENERGI}\end{center}
+
+
+
+\begin{multicols*} {2} 
+\newcommand{\tikzmark}[2]{\tikz[remember picture,baseline=(#1.base)]{\node[inner sep=0pt] (#1) {#2};}} 
+
+
+\begin{enumerate}[label=\textbf{\Alph*.},itemsep=0mm]
+
+%------------ nomor 1----------
+\item \textbf{Usaha \textit{Work}}
+
+    Usaha adalah hasil kali gaya yang searah dengan perpindahan dengan besarnya perpindahan.
+    $$ W = F.s $$
+
+    \begin{tikzpicture}
+    \draw(0,0) rectangle (1,0.6);
+    \draw[->](.5,0.3)--+(30:2cm)node{$\vec{F}$}[xshift=0.2cm,scale=0.7] ;
+    \draw[->](.5,0.3)--+(1.73,0);
+    \draw[->](.5,.3)--+(0,1);
+    \draw(5,0) rectangle (6,0.6);
+    \draw (0.5,-0.1)-- (5.5,-0.1);
+    \node at (3, 0.1){$\vec{s}$};
+
+
+     
+
+
+    \end{tikzpicture}
+\item \textbf{Energi Kinetik}
+
+    Energi kinetik adalah energi pada benda yang sedang bergerak. Sehingga pada benda yang mempunyai kecepatan $v$ dipastikan mempunyai energi. Sedangkan pada benda diam ($v = 0$) benda tidak punya energi kinetik
+    $$ EK = \frac{1}{2} m.v^2$$
+
+\item \textbf{Energi Potensial}
+
+    Energi Potensial adalah energi yang dimiliki benda pada suatu ketinggian tertentu. Hal ini dikarenakan suatu benda pada ketinggiah $h$ mempunyai potensi untuk turun, berubah menjadi energi kinetik atau gerak.
+    $$ EP = m.g.h $$ 
+
+
+\item \textbf{Energi Potensial Pegas}
+
+    Energi potensial pegas adalah energi yang dimiliki pegas saat memanjang. Sebagai ilustrasi, suatu pegas memiliki panjang $L$. Saat tersebut pegas tidak menyimpan energi (potensial). Sedangkan saat ditarik sehingga bertambah panjang $\Delta L$, kemudian akan menyimpan energi berupa energi potensial. Saat pegas dilepaskan akan terjadi gerakan (bisa dimanfaatkan sebagai pistol mainan, energi potensial berubah menjadi energi kinetik peluru)
+    $$ F = k.\Delta x$$
+    $$ EP_{pegas}=\frac{1}{2}k.\Delta x^2$$
+    \begin{tabular}{p{0.2cm} p{0.1cm} l}
+    $k$ & : & konstanta pegas (N/m) \\
+    $\Delta x $  &: & Pertambahan panjang (m) \\
+    $F $ &:& Gaya (N)\\
+    \end{tabular}
+
+\item \textbf{Hubungan Energi dan Usaha}
+    
+    Usaha didefinisikan sebagai banyaknya perubahan energi yang terjadi. Misalnya suatu mobil mula-mula diam kemudian menjadi memiliki kecepatan 20 m/s. Maka usaha adalah $\Delta Ek = Ek_2 - Ek_1 = \frac{1}{2} mv^2 - 0 $. Mula-mula kecepatan nol, maka tidak ada energi kinetik.
+    $$ W = \Delta Ek = \Delta Ep $$
+
+\item \textbf{Kekekalan Energi Mekanik}
+    
+    Energi tidak dapat diciptakan hanya dapat diubah bentuk. Oleh karena itu total energi akan selalu kekal.
+     \begin {align*}
+     EM_1 &= EM_2 \\
+     Ep_1 + Ek_1 &= Ep_2 + Ek_2 \\
+     mgh_1 + \frac{1}{2}mv_1^2 &= mgh_2 + \frac{1}{2}mv_2^2 \\
+     \end{align*}
+\end{enumerate}
+\textbf{LATIHAN SOAL}
+
+\begin{enumerate}
+    \item Sebuah balok ditarik gaya 120 N membentuk sudut 30$^o$ terhadap horisontal. Jika balok tersebut bergerak sejauh 10 m, tentukan usaha yang dilakukan untuk memindahkan balok tersebut!
+    \vspace{3cm}
+
+    \item Suatu balok berada dalam keadaan diam. Kemudian balok ditarik dengan percepatan 2 m/s$^2$. Jika massa balok adalah 2 kg, tentukan usaha untuk menggerakkan balok selama 5 s !
+    \vspace {3cm}
+
+    \item Balok 2 kg akan dipindahkan dari suatu bidang miring menuju puncak. Jika panjang lintasan bidang miring adalah 10 m dan kemiringan bidang miring adalah 37$^o$ tentukan usaha untuk mengerjakan hal tersebut!
+    \vspace {4cm}
+
+
+    \item  Suatu mobil bergerak dengan kecepatan 72 km/jam. Pada saat itu mobil mobil berjarak 100 m dari lampu lalu lintas yang berubah menjadi merah. Berapa gaya pengereman yang dilakukan agar tidak melanggar peraturan? ($m$ = 5000 kg)
+    \vspace {3cm}
+
+
+    \item Martil dengan massa 10 kg dijatuhkan dari ketinggian 50 cm untuk memukul suatu tongkat ke dalam tanah. Panjang tongkat adalah 40 cm. Jika gaya tahan tanah adalah 1000 N, maka martil harus dipukulkan sebanyak . . . . kali
+        \vspace {3cm}
+        
+        
+    \item Besar usaha untuk menggerakkan mobil bermassa 2 ton dari keadaan diam hingga bergerak dengan kecepatan 72 km/jam jika jalan licin adalah . . . 
+    \pilgani{
+    \item 1,25 $\times10^4$ joule
+    \item 2,5 $\times10^4$ joule
+    \item 4 $\times10^5$ joule
+    \item 6,25 $\times10^5$ joule
+    \item 4 $\times10^6$ joule }
+      \vspace {3cm}
+      
+      \item Balok bermassa 5 kg diberi gaya vertikal ke atas 75 N, selama 4 sekon. Besar usaha yang dilakukan gaya jika benda mula-mula diam adalah . . .
+      \pilgani{
+      \item 3.000 joule
+      \item 2.000 joule
+      \item 1.500 joule
+      \item 1.000 joule
+      \item 375 joule
+      } \vspace {3cm}
+      
+      \item Rak kecil bermassa 10 kg mula-mula diam di atas lantai licin, kemudian didorong selama 3 sekon sehingga bergerak lurus dengan percepatan 2 m/s$^2$. Besar usaha yang terjadi adalah . . . .
+      \pilgani{
+      \item 20 J
+      \item 30 J
+      \item 60 J
+      \item 180 J
+      \item 360 J
+      }  \vspace {3cm}
+      
+      \item Batu bermassa 1 kg dilempar dari tanah vertikal ke atas dengan kecepatan 12 m/s, maka besar energi kinetik yang dialami bola pada ketinggian 5 m dari tanah adalah . . . 
+      \pilgani{
+      \item 122 J
+      \item 71 J
+      \item 50 J
+      \item 22 J
+      \item 20 J
+      }  \vspace {3cm}
+      
+      \item Benda bermassa $m$ dilepaskan dari puncak bidang miring yang licin dengan ketinggian $h$. Perbandingan energi potensial dan energi kinetik jika balok berada pada ketinggian $\frac{1}{3}h$ adalah . . . .
+      \pilgani{
+      \item $E_p : E_k$ = 1 : 3
+      \item $E_p : E_k$ = 1 : 2
+      \item $E_p : E_k$ = 2 : 1
+      \item $E_p : E_k$ = 2 : 3
+      \item $E_p : E_k$ = 3 : 2
+    }\vspace {3cm}
+    
+    \item Balok bermassa 5 kg mula-mula diam, kemudian bergerak lurus dengan percepatan 3 m/s$^2$. Besar usaha yang diubah menjadi energi kinetik selama 2 sekon adalah . . . .
+    \pilgani{
+    \item 15 J
+    \item 30 J
+    \item 45 J
+    \item 60 J
+    \item 90 J
+    }
+    \vspace {3cm}
+    
+    \item Bola voley bermassa 200 gram dilemparkan vertikal ke atas dengan kecepatan awal 30 m/s. Saat mencapai titik tertinggi, besar energi potensial bola adalah . . . 
+    \pilgani{
+    \item 90 J
+    \item 120 J
+    \item 240 J
+    \item 270 J
+    \item 540 J
+    } \vspace {3cm}
+    
+    \item Kotak bermassa 1 kg jatuh dari ketinggian 20 m. Energi kinetik benda saat mencapai ketinggian 5 m dari permukaan tanah adalah. . . . 
+    \pilgani{
+    \item 50 J
+    \item 150 J
+    \item 200 J
+    \item 500 J
+    \item 1.500 J
+    } \vspace{3cm}
+    
+    \item Sebuah benda mula-mula berada ketinggian $h$, kemudian dijatuhkan. Pada suatu saat energi kinetiknya mencapai tiga kali energi potensialnya. Pada saat itu tinggi benda adalah . . . 
+    \pilgani{
+    \item $3h$
+    \item $\frac {1}{3}h$
+    \item $\frac{1}{4}h$
+    \item $\frac{1}{2}h$
+    \item $2h$
+    }
+    \vspace{3cm}
+    
+    \item Balok ditarik dengan gaya 100 N yang membentuk sudut $53^o$ terhadap arah mendatar. Besar usaha yang dilakukan oleh gaya untuk berpindah sejauh 5 m adalah . . . .
+    \pilgani{
+    \item 100 J
+    \item 200 J
+    \item 300 J
+    \item 400 J
+    \item 500 J
+    } 
+    \vspace{3cm}
+    
+    \item Untuk meregangkan sebuah pegas sejauh 10 cm dibutuhkan gaya sebesar 40 N. Energi potensial pegas ketiga meregang sejauh 20 cm adalah . . . .
+    \pilgani{
+    \item 4 J
+    \item 8 J
+    \item 40 J
+    \item 80 J
+    \item 200 J
+    } \vspace{3cm}
+    
+    
+    \item Sebuah gaya $F=(2\vec{i}+3\vec{j})$ N melakukan usaha dengan titik tangkapnya berpindah sejauh $r=(4\vec{i}+a\vec{j})$ m. Jika usaha sebesar 26 joule, nilai $a$ adalah . . . .
+  \pilgani{  \item 12 
+    \item 8
+    \item 7
+    \item 6 
+    \item 5 } \vspace{3cm}
+    
+    
+    \item Gaya yang dikerjakan oleh sebuah benda yang memiliki daya 500 watt, pada jarak 400 m dalam selang waktu 16 sekon adalah . . . 
+    \pilgani{
+    \item 0,2 N
+    \item 2 N
+    \item 20 N
+    \item 200 N
+    \item 2.000 N
+    }\vspace{3cm}
+    
+    \item Perhatikan grafik berikut, sebuah benda bermassa 10 kg bergerak sepanjang garis lurus. 
+    \vspace{2cm}
+    Usaha yang dilakukan gaya untuk memindahkan benda dari posisi 0 hingga 6 meter adalah . . . .
+    \pilgani{
+    \item 62 J
+    \item 56 J
+    \item 46 J
+    \item 36 J
+    \item 28 J
+    }
+    \vspace{3cm}
+    
+    \item Suatu ayunan dengan bandul bermassa $m$ memiliki panjang tali 1,25 m. Ayunan tersebut disimpangkan sejauh 60$^o$. Setelah disimpangkan, ayunan dilepas tanpa kecepatan awal. Kelajuan bantul saat melewati titik terendah adalah . . . 
+    \pilgani{
+    \item 2 m/s
+    \item 2,5 m/s
+    \item 3 m/s
+    \item 3,5 m/s
+    \item 4 m/s
+    }
+    \vspace{3cm}
+    
+    
+    \item Sebuah balok bermassa 10 kg berada pada bidang miring dengan kemiringan $30^o$. Saat dilepaskan mmeluncur sejauh 10m, balok sampai di bidang datar. Berapa kecepatan balok saat mencapai bidang datar?
+    \
+    
+\end{enumerate}
+
+\end{multicols*}
+
+
+ \end{document}
+
+
+
+
+
+

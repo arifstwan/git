@@ -1,0 +1,178 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=0.7cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\begin{document}
+\begin{center} \textbf{BAB USAHA DAN ENERGI}\end{center}
+
+
+
+\begin{multicols*} {2} 
+\newcommand{\tikzmark}[2]{\tikz[remember picture,baseline=(#1.base)]{\node[inner sep=0pt] (#1) {#2};}} 
+
+
+\begin{enumerate}[label=\textbf{\Alph*.},itemsep=0mm]
+
+%------------ nomor 1----------
+\item \textbf{Usaha \textit{Work}}
+
+    Usaha adalah hasil kali gaya yang searah dengan perpindahan dengan besarnya perpindahan.
+    $$ W = F.s $$
+
+    \begin{tikzpicture}
+    \draw(0,0) rectangle (1,0.6);
+    \draw[->](.5,0.3)--+(30:2cm)node{$\vec{F}$}[xshift=0.2cm,scale=0.7] ;
+    \draw[->](.5,0.3)--+(1.73,0);
+    \draw[->](.5,.3)--+(0,1);
+    \draw(5,0) rectangle (6,0.6);
+    \draw (0.5,-0.1)-- (5.5,-0.1);
+    \node at (3, 0.1){$\vec{s}$};
+
+
+     
+
+
+    \end{tikzpicture}
+\item \textbf{Energi Kinetik}
+
+    Energi kinetik adalah energi pada benda yang sedang bergerak. Sehingga pada benda yang mempunyai kecepatan $v$ dipastikan mempunyai energi. Sedangkan pada benda diam ($v = 0$) benda tidak punya energi kinetik
+    $$ EK = \frac{1}{2} m.v^2$$
+
+\item \textbf{Energi Potensial}
+
+    Energi Potensial adalah energi yang dimiliki benda pada suatu ketinggian tertentu. Hal ini dikarenakan suatu benda pada ketinggiah $h$ mempunyai potensi untuk turun, berubah menjadi energi kinetik atau gerak.
+    $$ EP = m.g.h $$ 
+
+
+\item \textbf{Energi Potensial Pegas}
+
+    Energi potensial pegas adalah energi yang dimiliki pegas saat memanjang. Sebagai ilustrasi, suatu pegas memiliki panjang $L$. Saat tersebut pegas tidak menyimpan energi (potensial). Sedangkan saat ditarik sehingga bertambah panjang $\Delta L$, kemudian akan menyimpan energi berupa energi potensial. Saat pegas dilepaskan akan terjadi gerakan (bisa dimanfaatkan sebagai pistol mainan, energi potensial berubah menjadi energi kinetik peluru)
+    $$ F = k.\Delta x$$
+    $$ EP_{pegas}=\frac{1}{2}k.\Delta x^2$$
+    \begin{tabular}{p{0.2cm} p{0.1cm} l}
+    $k$ & : & konstanta pegas (N/m) \\
+    $\Delta x $  &: & Pertambahan panjang (m) \\
+    $F $ &:& Gaya (N)\\
+    \end{tabular}
+
+\item \textbf{Hubungan Energi dan Usaha}
+    
+    Usaha didefinisikan sebagai banyaknya perubahan energi yang terjadi. Misalnya suatu mobil mula-mula diam kemudian menjadi memiliki kecepatan 20 m/s. Maka usaha adalah $\Delta Ek = Ek_2 - Ek_1 = \frac{1}{2} mv^2 - 0 $. Mula-mula kecepatan nol, maka tidak ada energi kinetik.
+    $$ W = \Delta Ek = \Delta Ep $$
+
+\item \textbf{Kekekalan Energi Mekanik}
+    
+    Energi tidak dapat diciptakan hanya dapat diubah bentuk. Oleh karena itu total energi akan selalu kekal.
+     \begin {align*}
+     EM_1 &= EM_2 \\
+     Ep_1 + Ek_1 &= Ep_2 + Ek_2 \\
+     mgh_1 + \frac{1}{2}mv_1^2 &= mgh_2 + \frac{1}{2}mv_2^2 \\
+     \end{align*}
+\end{enumerate}
+\textbf{LATIHAN SOAL}
+
+\begin{enumerate}
+    \item Sebuah balok ditarik gaya 120 N membentuk sudut 30$^o$ terhadap horisontal. Jika balok tersebut bergerak sejauh 10 m, tentukan usaha yang dilakukan untuk memindahkan balok tersebut!
+    \vspace{3cm}
+
+    \item Suatu balok berada dalam keadaan diam. Kemudian balok ditarik dengan percepatan 2 m/s$^2$. Jika massa balok adalah 2 kg, tentukan usaha untuk menggerakkan balok selama 5 s !
+    \vspace {3cm}
+
+    \item Balok 2 kg akan dipindahkan dari suatu bidang miring menuju puncak. Jika panjang lintasan bidang miring adalah 10 m dan kemiringan bidang miring adalah 37$^o$ tentukan usaha untuk mengerjakan hal tersebut!
+    \vspace {4cm}
+
+
+    \item  Suatu mobil bergerak dengan kecepatan 72 km/jam. Pada saat itu mobil mobil berjarak 100 m dari lampu lalu lintas yang berubah menjadi merah. Berapa gaya pengereman yang dilakukan agar tidak melanggar peraturan? ($m$ = 5000 kg)
+    \vspace {3cm}
+
+
+    \item Martil dengan massa 10 kg dijatuhkan dari ketinggian 50 cm untuk memukul suatu tongkat ke dalam tanah. Panjang tongkat adalah 40 cm. Jika gaya tahan tanah adalah 1000 N, maka martil harus dipukulkan sebanyak . . . . kali
+
+\end{enumerate}
+
+\end{multicols*}
+
+
+ \end{document}
+
+
+
+
+
+

@@ -1,0 +1,374 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+\newcommand{\spasi}{
+    \vspace{-0.5cm}
+\begin{tcolorbox} [boxrule=0.5pt,height=4.2cm, colback=white]
+
+\end{tcolorbox}
+
+}
+
+
+\begin{document}
+
+
+ \textbf{Kuis Gravitasi} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+No callculator allowed !  
+$$ G = 6,7 \times 10^{-11}$$
+
+\begin{multicols*}{2}
+
+\textbf{A. Gaya gravitasi}
+
+\begin{enumerate}
+
+% no 1 --------
+\item Dua bua benda masing-masing 4 kg dan 3 kg berada pada jarak 2 m. Gaya gravitasi yang dirasakan benda tersebut adalah . . . .
+	\pilgani{
+	\item 6,7 $\times 10^{-11}$ N
+	\item 1,34 $\times 10^{-11}$ N
+	\item 2,01  $\times 10^{-10}$ N
+	\item 3,35  $\times 10^{-10}$ N
+	\item 6,7  $\times 10^{-10}$ N
+	}
+\spasi
+
+% no 2 
+\item Dua massa masing-masing 20 kg, dan 10 kg berada pada jarak 8 m. Gaya tarik kedua massa tersebut adalah . . . 
+\pilgani{
+    \item 8,32 $\times 10^{-10}$ 
+    \item 6,24 $\times 10^{-10}$  
+    \item 4,16 $\times 10^{-10}$ 
+    \item 2,09 $\times 10^{-10}$ 
+    \item 1,04  $\times 10^{-10}$ 
+    } 
+  \spasi 
+ % no 3
+ 
+\item Dua buah benda dengan massa tertentu pada jarak $r$ memiliki gaya gravitasi $F$. Jika kedua benda massanya dijadikan 3 kali lipat, dan jarak ke dua benda dijadikan 2 kali lipat, maka gaya yang terjadi sekarang adalah . . . .
+\pilgani{
+	\item $ 4 F $
+	\item $\frac{9}{4} F$
+	\item $\frac{1}{2} F$
+	\item $\frac{4}{9} F $
+	\item $\frac{4}{3} F$
+}
+\spasi
+	
+% no 4
+\item Dua buah benda dengan massa 2 kg dan 12,5 kg berada pada jarak 35 m. Jika ada benda ketiga diletakkan antara dua benda tersebut ($m$ = 3 kg), agar jumlah gaya adalah nol maka harus diletakkan di . . . . .
+\pilgani{
+	\item 10 m dari 12,5 kg
+	\item 15 m dari 2 kg
+	\item 10 m dari 2 kg
+	\item 20 m dari 12,5 kg
+	\item 25 m dari 12,5 kg
+	}
+    \spasi
+
+	
+% no 5
+\item Tiga buah benda masing-masing 1kg, jika jarak A dan B 1m, B dan C 1 m, dan B ada di siku-siku. Maka besar gaya di C  adalah . , , , 
+\pilgani{
+    \item $\sqrt{2}$ G
+    \item $\sqrt{2+\sqrt{2}}$ G
+    \item $\sqrt{3}$ G
+    \item $ 2 \sqrt{2}$ G
+    \item $\frac{1}{2} \sqrt{5+2\sqrt{2}}$ G
+}
+\spasi
+
+
+% no 6 
+\item Benda A massanya 6 kg, benda B 2 kg dan C 4 kg. Jarak A dan B 2 m, jarak B dan C adalah 2 m. Jika B ada di siku-siku maka gaya di titik B adalah . . . .
+\pilgani{
+	\item $\sqrt{13} $G N
+	\item $2\sqrt{2} $ G N
+	\item $ \sqrt{7} $ G N
+	\item $ 2\sqrt{3} $ G N
+	\item $ 3 $ G  N }
+	\spasi
+
+\end{enumerate}
+
+\newpage
+\textbf{B. Perbandingan medan/percepatan, dan berat}
+\begin{enumerate}
+%no B.1
+\item Berat di bumi adalah 3200N. Berat benda tersebut jika berada pada ketinggian $3R$ adalah. . . . \pilgani{
+    \item 6400 N
+    \item 3200 N
+    \item 1600 N
+    \item 160 N
+    \item 200 N
+}
+\spasi
+% no B.2
+\item Suatu planet mempunyai massa 10 kali bumi dan jari-jari 3 kali bumi. Maka percepatan gravitasi di planet tersebut adalah . . . 
+\pilgani{
+    \item 2$g$
+    \item $\frac{10}{3} g$
+    \item $\frac{3}{10} g$
+    \item $\frac{10}{9} g$
+    \item $\frac{9}{10} g$
+    }
+  \spasi 
+% no B 3
+\item Planet B dengan massa jenis dua kali bumi dan tiga kali jari-jari bumi. Maka percepatan gravitasi di permukan B adalah . . . 
+\pilgani{
+	\item $ \frac{2}{3} g$
+	\item $ \frac{1}{3} g $
+	\item $ \frac {3}{1} g $
+	\item $ 6 g $
+	\item $ 3 g $
+	}
+\spasi
+% no B 4
+\item Percepatan gravitasi di permukaan bumi adalah 10 N/kg. Pada titik di ketinggian tertentu percepatan gravitasi adalah 2 N/kg. Ketinggian tersebut dari pusat bumi adalah. . . . 
+\pilgani{
+	\item $\sqrt{5}$ R
+	\item $\sqrt{2}$ R
+	\item $2\sqrt{3}$ R
+	\item $2\sqrt{2} $ R
+	\item $\frac{1}{2} $ R
+	}
+\spasi
+% no B 5
+\item Planet x memiliki percepatan gravitasi 7,5 kali gravitasi bumi. Jika jari-jari planet adalah 2 kali bumi, maka massa planet adalah . . . 
+\pilgani{
+	\item $3 M$ 
+	\item $2 M $
+	\item $1 M$
+	\item $ \frac{1}{2} M$
+	\item $ \frac{3}{4} M$
+	}
+\spasi
+% no B 6
+
+\item Berat seorang astronot di Bumi adalah 1000 N. Astronot bepergian ke planet X yang mempunyai massa 18 kali bumi dan jari-jari 10 kali bumi. Maka berat astronot tersebut saat berada di ketinggian 2R dari permukaan planet X adalah . . . .
+\pilgani {
+    \item 3200 N
+    \item 3200/9 N
+    \item 800 N
+    \item 800/3 N
+    \item 200 N }
+    \spasi
+
+\end{enumerate}
+
+
+\textbf{C. Kecepatan satelit/kecepatan lepas}
+\begin{multicols}{2}
+\vspace{-0.5cm}
+\begin{align*}
+v_{satelit} &= \sqrt{\frac{GM}{r}} \\
+v_{satelit} &= \sqrt{gr}\\
+\end{align*} 
+
+\begin{align*}
+v_{lepas} &= \sqrt{\frac{2GM}{r}} \\
+v_{lepas} &= \sqrt{2gr}\\
+\end{align*} 
+\end{multicols}
+\vspace{-1.7cm}\begin{align*}
+r &= R+h\\
+g &= \text{percepatan pada titik tertentu}\\
+\end{align*}
+Energi Potensial $EP$ dan Potensial $V$
+\begin{align*}
+EP &= G\frac{Mm}{r}\\
+\phantom {s}\\
+V &= G\frac{M}{r}\\
+\end{align*}
+
+\begin{enumerate}
+%no C 1
+\item Seorang peneliti berada di planet yang berjari-jari 1000km. Jika percepatan gravitasi di planet adalah 8 m/s$^2$,maka kecepatan minimum untuk lepas dari planet adalah . . . 
+\pilgani{
+    \item 2 km/s
+    \item $\sqrt{8}$ km/s
+    \item 4 km/s
+    \item 4$\sqrt{10}$km/s
+    \item 16 km/s
+}
+\spasi
+
+% no C 2
+\item Suatu roket berada di permukaan bumi. Kecepatan minimal agar bisa lepas dari pengaruh gravitasi bumi adalah . . . (R = $6,4 x 10^3$ km)
+\pilgani{
+	\item $ 8\sqrt{2}$ km/s
+	\item $8$ km/s
+	\item 16 km/s
+	\item 4 km/s
+	\item 2 km/s
+	}
+\spasi
+
+% no C 3
+\item Suatu planet memiliki massa $2\times 10^{20}$ kg dan jari-jari 1000 km. Maka kecepatan untuk meninggalkan planet adalah . . . . .
+\pilgani{
+	\item $2\sqrt{G} \times 10^7$ m/s
+	\item $\sqrt{G} \times 10^7$ m/s
+	\item $\frac{1}{2}\sqrt{G} \times 10^7$ m/s
+	\item $\sqrt{2G} \times 10^7$ m/s
+	\item $\frac{3}{2}\times 10^7$ m/s
+	}
+\spasi
+% no C 4.
+\item Pada ketinggian $R$ dari permukaan bumi kecepatan satelit adalah $v$. Apabila satelit berada pada ketinggia $3R$ maka kecepatan satelit mengorbit adalah . . .  
+\pilgani{
+	\item $\frac{1}{2} v $
+	\item $\frac{3}{4} v $
+	\item $v$
+	\item $2 v$
+	\item $\frac{3}{2} $
+	}
+\spasi
+
+
+\item Suatu roket berada di permukaan planet. Jika roket ingin diluncurkan sampai ketinggian $R$ maka kecepatan yang dibutuhkan adalah . . . 
+\pilgani{
+    \item $\left ( \frac{4GM}{3R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{5GM}{3R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{2GM}{5R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{GM}{R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{GM}{3R} \right )^{\frac{1}{2}}$
+}
+\spasi
+\end{enumerate}
+\textbf{D. Hukum Kepler}
+
+\begin{enumerate}
+\item Suatu planet berada pada jarak 2,25 kali jarak bumi matahari. Maka waktu putaran planet tersebut mengelilingi matahari adalah . . . .
+\pilgani{
+    \item 3,375
+    \item 2,25
+    \item 1,5
+    \item 0,5
+    \item 0,25
+}\spasi
+
+% D. 2
+\item Periode planet A dan B masing-masing 27 dan 8 tahun. Jika diketahui jarak planet B ke pusat tata surya adalah 44 juta km, maka jarak planet A ke pusat tata surya adalah . . . 
+\pilgani{
+    \item 23
+    \item 64
+    \item 81
+    \item 99
+    \item 256
+}
+\spasi
+
+% D 3
+\item  Perhatikan pernyataan berikut:
+\pernyataan{
+    \item Semakin jauh dari pusat matahari, kecepatan planet semakin kecil
+    \item Luasan sapuan juring yang sama ditempuh dalam waktu yang sama
+    \item Lintasan planet adalah elips dengan matahari di salah satu titik pusatnya
+    \item Periode pangkat tiga berbanding lurus dengan jarak ke matahari pangkat dua
+}
+Pernyataan yang benar tentang hukum Kepler adalah . . .
+\pilgani{ 
+    \item 1,2,3
+    \item 1,3
+    \item 2,4
+    \item 4 saja
+    \item semua benar
+}
+
+
+
+\end{enumerate}
+
+
+\end{multicols*}
+\end{document}
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Kuis Usaha dan Energi} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+No callculator allowed !  
+
+\begin{enumerate}
+
+\item Bola 4 kg dilempar ke atas dari atas tanah dengan kelajuan 10 m/s. Maka energi kinetik bola saat berada pada ketinggian 2 m adalah . . . 
+    \pilgani{
+        \item 80 J
+        \item 100 J
+        \item 120 J
+        \item 140 J
+        \item 160 J }
+        
+\item Sebuah benda dengan massa 2 kg mula-mula diam. Jika ditarik dengan gaya 4 N ke samping, maka usaha untuk memindahkan benda selama 3 sekon dan besar perpindahannya adalah . . . 
+    \pilgani{
+        \item 20 J dan 5 m
+        \item 36 J dan 9 m
+        \item 40 J dan 10 m
+        \item 60 J dan 15 m
+        \item 100 J dan 25 m
+    }
+
+
+\item Mobil dengan massa 2 ton mula2 diam. Pada saat $t$ mobil tersebut bergerak dengan 4 kJ. Jika mobil tersebut ditarik dengan gaya 400 N, maka waktu $t$ adalah . . . 
+    \pilgani{
+        \item 2 s
+        \item 4 s
+        \item 6 s
+        \item 8 s
+        \item 10 s
+    }
+
+\item Balok berada pada alas bawah suatu bidang miring. Balok tersebut bermassa 2 kg dan berada pada kecepatan 20 m/s. Bidang miring tersebut membentuk sudut 30$^o$. Jika balok sudah meluncur sejauh 10 m, maka perbandingan energi kinetik dan energi potensial di titik tersebut adalah . . . .
+    \pilgani{
+        \item 1 : 2
+        \item 2 : 1
+        \item 3 : 1 
+        \item 2 : 3
+        \item 1 : 1
+    }
+
+         
+\item Suatu pegas ditarik dengan gaya 50 N bertambah panjang 2cm. Jika pegas tersebut digunakan untuk melemparkan anak panah sebesar 10 gram, dan ditarik sejauh 10 cm, maka kecepatan yang dihasilkan adalah . . . 
+    \pilgani{
+        \item 10 m/s
+        \item 20 m/s
+        \item 30 m/s
+        \item 40 m/s
+        \item 50 m/s
+    }
+
+\item Suatu gaya $\vec{F}=(2\hat{i}+4\hat{j})$ N digunakan untuk menggerakan benda. Benda tersebut berpindah sejauh 10 m ke arah mendatar. Maka usaha yang dihasilkan adalah . . . .
+    \pilgani{
+        \item 1 J
+        \item 2 J
+        \item 10 J
+        \item 15 J
+        \item 20 J 
+    }
+
+
+
+
+
+
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
