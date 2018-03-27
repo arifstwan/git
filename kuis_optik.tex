@@ -1,0 +1,209 @@
+\documentclass[11pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Kuis Gelombang Cahaya} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}
+
+\begin{enumerate}
+\item Sebutkan 5 macam peristiwa pada gelombang cehaya, jelaskan, dan sebutkan contohnya . . . .
+
+\vspace{5cm}
+
+\item Sebuah benda berada pada jarak 6 cm dari cermin cekung. Cermin tersebut memiliki fokus 4 cm. Maka posisi dan sifat bayangan yang dihasilkan adalah . . . .
+\pilgan{
+        \item 12 cm, tegak, diperbesar
+        \item 12 cm, tegak, diperkecil
+        \item 12 cm, terbalik, diperbesar
+        \item 3 cm, tegak, diperbesar
+        \item 3 cm, terbalik, diperkecil
+        }
+
+\item Dua buah cermin membentuk sudut 120$^o$. Seberkas sinar jatuh pada cermin pertama dengan sudut 50$^o$. Maka sudut patul pada cermin kedua adalah . . . 
+\pilgani{
+        \item 30$^o$
+        \item 40$^o$
+        \item 50$^o$
+        \item 60$^o$
+        \item 70$^o$
+        }
+
+\vspace{3cm}
+\item Indeks bias gelas adalah 1,5 dan indeks bias air 1,33. Sudut kritis bidang batas air-gelas adalah . . .
+\pilgani{
+        \item 32,7$^o$
+        \item 42,7$^o$
+        \item 52,7$^o$
+        \item 62,7$^o$
+        \item 72,7$^o$
+        }
+\vspace{3cm}
+\item Suatu lapisan kimia dengan n = 1,5 ketebalan 6 cm mengapung di atas air (n = 1,33) dengan ketebalan 4 cm. Jarak semu antara dasar bejana dan permukaan lapisan kimia jika dipandang secara tegaklurus dari atas adalah  . . . 
+\pilgani{
+        \item 2 cm
+        \item 5 cm
+        \item 7 cm
+        \item 10 cm
+        \item 15 cm
+        }
+\vspace{3cm}
+\item Celah tunggal selebar 0,1 mm disinari berkas cahaya sejajar dengan $\lambda = 6000 \r{A}$. Pola difraksi yang terjadi ditangkap oleh layar pada jarak 40 cm dari celah. Jarak antara pita gelap ketiga dengan titik tengah terang pusat pada layar adalah . . . .
+\pilgani{
+        \item 1,6 mm
+        \item 3,2 mm
+        \item 3,6 mm
+        \item 7,2 mm
+        \item 9,6 mm
+        }
+
+\vspace{3cm}
+\item Cahaya dengn panjang gelombang 5000 $\r{A}$ datang pada celah kembar Young yang jaraknya 0,2 mm. Pola yang terjadi ditangka pada layar yang jaraknya 1 m dari celah kembar. Jarak dari terang pusat ke terang yang paling pinggir pada layar = 2,5 cm. Banyaknya garis terang pada layar adalah . . . garis
+\pilgani{
+        \item 5
+        \item 10
+        \item 11
+        \item 20
+        \item 21
+        }
+
+\vspace{3cm} \item Dua panjang gelombang digunakan dalam percobaan Young. Jika salah satu panjang gelombangnya 480 nm, berapakah panjang gelombang lainnya supaya pita terang keempat cahaya yang pertama bertepatan dengan pita terang keenam dari cahaya lainnya?  \pilgani{
+        \item 160 nm
+        \item 240 nm
+        \item 320 nm
+       \item 400 nm
+        \item 480 nm
+
+
+
+} \vspace{3cm} \item Seberkas cahaya monokromatik dengan panjang gelombang 600 nm menyinari tegak lurus suatu kisi yang terdiri dari 500 garis /mm. Tentukan sudut deviasi orde kkedua!  \pilgani{ \item 30$^o$
+        \item 37$^o$
+        \item 45$^o$
+        \item 53$^o$
+        \item 60$^o$
+        }
+
+\vspace{3cm}
+
+\item Snar tak terpolarisasi dengan intensitas I datang pada polariod dari 2 lembar polaroid ideal. Berapakah seharusnya sudut antara sumbu-sumbu polarisasi dari kedua polaroid, jika intensitas besar cahaya yang keluar adalah $\frac{I}{4}$?
+\pilgani{
+        \item 30 $^o$
+        \item 37 $^o$
+        \item 45$^o$
+        \item 53$^o$
+        \item 60$^o$
+        }
+\vspace{3cm}
+
+
+\item Lensa tunggal berupa satu permukaan lengkung seperti gambar berikut
+
+\graphicspath{ {pic/} }
+\includegraphics[width=8cm]{rumuslensasingle}
+\begin{align*}
+\frac{n_1}{s}+\frac{n_2}{s'}&=\frac{n_2-n_1}{r}
+\end{align*}
+
+Jari-jari salah satu ujung permukaan sebuah silinder kaca (n=1,5) setengah bola adalah 2 cm. Benda dengan tinggi 2 mm ditempatkan pada jarak 8 cm dari permukaan itu. Jarak bayangan bila silinder kaca itu cembung adalah . . .
+\pilgani{
+        \item 12 cm
+        \item 20 cm
+        \item 24 cm
+        \item 36 cm
+        \item 40 cm
+        }
+
+\end{enumerate}
+
+\end{multicols*}\end{document}
+
+
+
+
+
+
