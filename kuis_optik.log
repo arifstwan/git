@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  27 MAR 2018 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  31 MAR 2018 02:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,7 +1040,7 @@ Package pdftex.def Info: pic/rumuslensasingle.png used on input line 190.
 Here is how much of TeX's memory you used:
  21688 strings out of 495011
  432054 string characters out of 6181024
- 643011 words of memory out of 5000000
+ 643010 words of memory out of 5000000
  24333 multiletter control sequences out of 15000+600000
  18407 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1054,7 +1054,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
 alatino/uplri8a.pfb>
-Output written on kuis_optik.pdf (2 pages, 1072665 bytes).
+Output written on kuis_optik.pdf (2 pages, 1072658 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
