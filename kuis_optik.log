@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  31 MAR 2018 02:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  3 APR 2018 09:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,63 +1001,131 @@ Package microtype Info: Loading generic settings for font family
 <pic/kritis.png, id=4, 721.69624pt x 481.8pt>
 File: pic/kritis.png Graphic file (type png)
  <use pic/kritis.png>
-Package pdftex.def Info: pic/kritis.png used on input line 126.
+Package pdftex.def Info: pic/kritis.png used on input line 124.
 (pdftex.def)             Requested size: 227.62204pt x 151.95894pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
+[]
+ []
 
-LaTeX Warning: Command \r invalid in math mode on input line 137.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 154.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 147.
+<pic/interganda.png, id=6, 697.60625pt x 443.6575pt>
+File: pic/interganda.png Graphic file (type png)
+ <use pic/interganda.png>
+Package pdftex.def Info: pic/interganda.png used on input line 156.
+(pdftex.def)             Requested size: 227.62204pt x 144.76239pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
+
+ []
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 169.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/kritis.png>]
-<pic/polarisasi2.png, id=18, 803.0pt x 481.8pt>
-File: pic/polarisasi2.png Graphic file (type png)
- <use pic/polarisasi2.png>
-Package pdftex.def Info: pic/polarisasi2.png used on input line 183.
-(pdftex.def)             Requested size: 227.62204pt x 136.5719pt.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/kritis.png> <./pic/i
+nterganda.png>] <pic/singleslit.png, id=22, 628.3475pt x 463.7325pt>
+File: pic/singleslit.png Graphic file (type png)
 
-<pic/polarisasi.png, id=19, 803.0pt x 481.8pt>
+<use pic/singleslit.png>
+Package pdftex.def Info: pic/singleslit.png used on input line 191.
+(pdftex.def)             Requested size: 170.71652pt x 125.9878pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--200
+
+ []
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 203.
+
+<pic/kisi2.jpg, id=23, 463.7325pt x 462.72874pt>
+File: pic/kisi2.jpg Graphic file (type jpg)
+ <use pic/kisi2.jpg>
+Package pdftex.def Info: pic/kisi2.jpg used on input line 217.
+(pdftex.def)             Requested size: 170.71652pt x 170.34555pt.
+
+<pic/kisi.png, id=24, 471.7625pt x 185.69376pt>
+File: pic/kisi.png Graphic file (type png)
+ <use pic/kisi.png>
+Package pdftex.def Info: pic/kisi.png used on input line 225.
+(pdftex.def)             Requested size: 227.62204pt x 89.59666pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+[2 <./pic/singleslit.png> <./pic/kisi2.jpg> <./pic/kisi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+<pic/polarisasi.png, id=31, 803.0pt x 481.8pt>
 File: pic/polarisasi.png Graphic file (type png)
  <use pic/polarisasi.png>
-Package pdftex.def Info: pic/polarisasi.png used on input line 184.
+Package pdftex.def Info: pic/polarisasi.png used on input line 259.
 (pdftex.def)             Requested size: 227.62204pt x 136.5719pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
+<pic/polarisasi2.png, id=32, 803.0pt x 481.8pt>
+File: pic/polarisasi2.png Graphic file (type png)
+ <use pic/polarisasi2.png>
+Package pdftex.def Info: pic/polarisasi2.png used on input line 260.
+(pdftex.def)             Requested size: 227.62204pt x 136.5719pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 [][]
  []
 
-<pic/rumuslensasingle.png, id=20, 738.76pt x 328.22626pt>
+<pic/rumuslensasingle.png, id=33, 738.76pt x 328.22626pt>
 File: pic/rumuslensasingle.png Graphic file (type png)
 
 <use pic/rumuslensasingle.png>
-Package pdftex.def Info: pic/rumuslensasingle.png used on input line 190.
+Package pdftex.def Info: pic/rumuslensasingle.png used on input line 283.
 (pdftex.def)             Requested size: 227.62204pt x 101.12805pt.
- [2 <./pic/polarisasi2.png> <./pic/polarisasi.png> <./pic/rumuslensasingle.png>
-] (./kuis_optik.aux) ) 
+
+Overfull \hbox (3.66084pt too wide) in paragraph at lines 281--284
+[]\OT1/cmss/bx/n/10.95 PEMBIASAN PADA PER-MUKAAN LENGKUNG
+ []
+
+<pic/thin.jpg, id=34, 466.3824pt x 280.4076pt>
+File: pic/thin.jpg Graphic file (type jpg)
+ <use pic/thin.jpg>
+Package pdftex.def Info: pic/thin.jpg used on input line 298.
+(pdftex.def)             Requested size: 227.62204pt x 136.85324pt.
+ [3 <./pic/polarisasi.png> <./pic/polarisasi2.png> <./pic/rumuslensasingle.png>
+] [4 <./pic/thin.jpg>] (./kuis_optik.aux) ) 
 Here is how much of TeX's memory you used:
- 21688 strings out of 495011
- 432054 string characters out of 6181024
- 643010 words of memory out of 5000000
- 24333 multiletter control sequences out of 15000+600000
- 18407 words of font info for 68 fonts, out of 8000000 for 9000
+ 21734 strings out of 495011
+ 432763 string characters out of 6181024
+ 646011 words of memory out of 5000000
+ 24361 multiletter control sequences out of 15000+600000
+ 19790 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 69i,9n,73p,863b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
-alatino/uplri8a.pfb>
-Output written on kuis_optik.pdf (2 pages, 1072658 bytes).
+ 69i,11n,73p,863b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on kuis_optik.pdf (4 pages, 1463435 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 5665 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8762 words of extra memory for PDF output out of 10000 (max. 10000000)
 
