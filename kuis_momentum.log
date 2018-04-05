@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  5 APR 2018 06:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  5 APR 2018 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,37 +1074,70 @@ File: pic/impuls.png Graphic file (type png)
 Package pdftex.def Info: pic/impuls.png used on input line 283.
 (pdftex.def)             Requested size: 115.89125pt x 85.35826pt.
 
-[2 <./pic/impuls.png>] <pic/mom3.png, id=29, 803.0pt x 423.5825pt>
-File: pic/mom3.png Graphic file (type png)
+[2 <./pic/impuls.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 332--352
 
-<use pic/mom3.png>
-Package pdftex.def Info: pic/mom3.png used on input line 343.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--369
+
+ []
+
+<pic/mom6.png, id=29, 187.7603pt x 42.51176pt>
+File: pic/mom6.png Graphic file (type png)
+ <use pic/mom6.png>
+Package pdftex.def Info: pic/mom6.png used on input line 383.
+(pdftex.def)             Requested size: 113.81102pt x 25.76865pt.
+
+<pic/mom4.png, id=30, 126.11824pt x 35.42647pt>
+File: pic/mom4.png Graphic file (type png)
+ <use pic/mom4.png>
+Package pdftex.def Info: pic/mom4.png used on input line 389.
+(pdftex.def)             Requested size: 113.81102pt x 31.96945pt.
+ [3 <./pic/mom6.png>] <pic/mom5.png, id=35, 169.33853pt x 42.51176pt>
+File: pic/mom5.png Graphic file (type png)
+ <use pic/mom5.png>
+Package pdftex.def Info: pic/mom5.png used on input line 393.
+(pdftex.def)             Requested size: 113.81102pt x 28.57158pt.
+
+<pic/mom7.png, id=36, 96.36pt x 70.85294pt>
+File: pic/mom7.png Graphic file (type png)
+ <use pic/mom7.png>
+Package pdftex.def Info: pic/mom7.png used on input line 398.
+(pdftex.def)             Requested size: 113.81102pt x 83.68465pt.
+
+<pic/mom3.png, id=37, 803.0pt x 423.5825pt>
+File: pic/mom3.png Graphic file (type png)
+ <use pic/mom3.png>
+Package pdftex.def Info: pic/mom3.png used on input line 403.
 (pdftex.def)             Requested size: 227.62204pt x 120.06946pt.
- [3 <./pic/mom3.png>] (./kuis_momentum.aux) ) 
+ [4 <./pic/mom4.png> <./pic/mom5.png> <./pic/mom7.png> <./pic/mom3.png>] (./kui
+s_momentum.aux) ) 
 Here is how much of TeX's memory you used:
- 21773 strings out of 495011
- 433617 string characters out of 6181024
- 657004 words of memory out of 5000000
- 24405 multiletter control sequences out of 15000+600000
- 19321 words of font info for 75 fonts, out of 8000000 for 9000
+ 21820 strings out of 495011
+ 434352 string characters out of 6181024
+ 657005 words of memory out of 5000000
+ 24440 multiletter control sequences out of 15000+600000
+ 19581 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,20n,73p,866b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fon
-ts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/palatino/uplri8a.pfb>
-Output written on kuis_momentum.pdf (3 pages, 276055 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
+no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
+fb>
+Output written on kuis_momentum.pdf (4 pages, 296462 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 10273 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 10293 words of extra memory for PDF output out of 12000 (max. 10000000)
 
