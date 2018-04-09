@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  5 APR 2018 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  9 APR 2018 07:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,11 +1115,11 @@ Package pdftex.def Info: pic/mom3.png used on input line 403.
  [4 <./pic/mom4.png> <./pic/mom5.png> <./pic/mom7.png> <./pic/mom3.png>] (./kui
 s_momentum.aux) ) 
 Here is how much of TeX's memory you used:
- 21820 strings out of 495011
- 434352 string characters out of 6181024
- 657005 words of memory out of 5000000
+ 21825 strings out of 495011
+ 434391 string characters out of 6181024
+ 657004 words of memory out of 5000000
  24440 multiletter control sequences out of 15000+600000
- 19581 words of font info for 79 fonts, out of 8000000 for 9000
+ 20011 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,20n,73p,866b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
@@ -1134,7 +1134,7 @@ public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on kuis_momentum.pdf (4 pages, 296501 bytes).
+Output written on kuis_momentum.pdf (4 pages, 303260 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
