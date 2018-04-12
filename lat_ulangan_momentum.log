@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  12 APR 2018 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.27)  12 APR 2018 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,7 +1012,7 @@ Package pdftex.def Info: pic/latul-mom3.jpg used on input line 126.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/latul-mom1.jpg> <./p
-ic/latul-mom3.jpg>] [2] (./lat_ulangan_momentum.aux) ) 
+ic/latul-mom3.jpg>] (./lat_ulangan_momentum.aux) ) 
 Here is how much of TeX's memory you used:
  21646 strings out of 495011
  431398 string characters out of 6181024
@@ -1021,15 +1021,15 @@ Here is how much of TeX's memory you used:
  15638 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,5n,73p,873b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
-/uplri8a.pfb>
-Output written on lat_ulangan_momentum.pdf (2 pages, 70335 bytes).
+{/usr/share/texlive/texmf-dis
+t/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
+ri8a.pfb>
+Output written on lat_ulangan_momentum.pdf (1 page, 70056 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  5655 words of extra memory for PDF output out of 10000 (max. 10000000)
 
