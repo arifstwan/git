@@ -15,6 +15,7 @@
 \usepackage{tkz-euclide}
 \usetkzobj{all}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{tikz} 	
 \usepackage{adjustbox}
 \usepackage{multicol}
@@ -78,11 +79,6 @@
 \begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
 \end{enumerate}}
 
-\newcommand*\daftar[1]{
-\begin{itemize}[label=$\bullet$, itemsep=0pt,topsep=0pt,leftmargin=*] #1 
-\end{itemize}}
-
-
 \newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
  \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
  \phantom{ini cuma sapi, wedus, dan ayam}
@@ -92,347 +88,117 @@
 \begin{document}
 
 
- \textbf{Ringkasan dan Latihan Gerak Harmonik Sederhana} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+ \textbf{Gerak Harmonik Sederhan} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
 
 \begin{multicols*}{2}
-\textbf{Pengertian}
+\textbf{Persamaan Gerak Harmonik}\\
+Gerak harmonik adalah gerak bolak-balik suatu titik keseimbangan secara teratur. Bayangkan bagaimana gerak suatu bandul, atau gerakan pegas yang digantungi massa, ditarik kemudian dilepaskan.\\
+\includegraphics[height=8cm]{pic/kuis-ghs1}
 
-Gerak harmonik adalah gerak teratur bolak balik dengan frekuensi/periode tertentu dengan simpangan sinusoidal terhadap waktu. 
+Pada gerak harmonik, gerakan naik turun pegas bisa dianggap sebagai gerak melingkar yang dilihat dari samping. Saat menyimpang maksimal terjadi $A$ amplitudo. Simpangan $y$ pada setiap saat tergantung sudut yang dibentuk
+\begin{align*}
+y&=A\sin(\theta)\\
+y&=A\sin(2\pi.\phi)\\
+y&=A\sin(2\pi.f.t)\\
+y&=A\sin(\omega.t)
+\end{align*}
+\setlength{\tabcolsep}{0.1\tabcolsep}
 
-Ilustrasi gerak harmonik adalah : gerak melingkar yang dilihat dari samping (1Dimensi), gerak pegas naik turun, dan gerakan bandul.
+\begin{tabular}{p{0.5cm} p{1mm} p{6cm}}
+$y$ &:& simpangan \\
+$v$ &:& kecepatan \\
+$a$ &:& percepatan \\
+$A$ &:& amplitudo/simpangan maks (m)\\
+$\theta$&:& sudut fase\\
+$\phi$&:& fase getaran
+\end{tabular}\\
+\begin{align*}
+\text{fase} &= \phi = \frac{t}{T}=f.t=\frac{\theta}{360}
+\end{align*}
+Perhatikan bagaimana menghitung sinus dan cosinus
+\begin{align*}
+\sin(50\pi) &= \sin(25x2\pi)\\
+\text{padahal 1 putaran adalah }&2\pi\text{,sehingga kembali ke titik 0 lagi}\\
+\sin(50\pi) &= \sin (0) = 0\\
+\sin(7,5\pi) &= \sin (6\pi + 1,5\pi)\\
+\sin(7,5\pi) &= \sin (1,5\pi) = \sin (270) = -1
+\end{align*}
 
-\includegraphics[width=8cm]{pic/mom1}
+\textbf{Persamaan Kecepatan}
+\begin{align*}
+v&=A\omega \sin(\omega.t)\\
+v&=A\omega\sin(\theta)
+\end{align*}
+
+\textbf{Persamaan Percepatan}
+\begin{align*}
+a &= -A\omega^2\sin(\omega.t)\\
+a &= -A\omega^2\sin(\theta)
+\end{align*}
+
+
 
 \begin{enumerate}
-\item Sebuah benda kecepatannya 20 m/s, dengan massa 1000 kg. Maka momentum benda tersebut adalah 
-\pilgani{
-        \item 10.000 Ns
-        \item 20.000 Ns
-        \item 30.000 Ns
-        \item 40.000 Ns
-        \item 50.000 Ns
-        }
-\item Bola A bermassa 2 kg bergerak ke sumbu-$x$ dengan kecepatan 20 m/s dan bola B dengan massa 1 kg bergerak ke sumbu-$y$ 30 m/s. Jumlah momentum kedua benda adalah . . .
-\pilgani{
-        \item 70 Ns
-        \item 10 Ns
-        \item -10 Ns
-        \item 50 Ns
-        \item 20 Ns
-        }
-
-\item Balok A bermassa 1 kg bergerak ke sumbu-$x$ dengan kecepatan 10 m/s, balok B bermassa 3 kg bergerak dengan kecepatan sama ke arah 30$^o$ dari sumbu-$y$. Total momentum kedua benda tersebut adalah . . .
-\pilgani{
-        \item $10\sqrt{10+1,5\sqrt{3}}$
-        \item $10\sqrt{13}$
-        \item $10$
-        \item $40$
-        \item -20
-        }
-\vspace{3cm}
-\textbf{Kekekalan Momentum}
-
-\begin{align*}
-\Sigma p &= \Sigma p'\\
-m_1.v_1 + m_2.v_2 &= m_1.v_1' +m_2v_2'\\
-\end{align*}
-
-\item Dua benda A dan B masing-masing massanya 4 kg dan 5 kg. Mereka bergerak dengan kecepatan berlawanan. Kecepatan A adalah 6 m/s, dan kecepatan B adalah $v$. Jika setelah bertumbukan, benda A dan B berbalik arah dengan kecepatan 4 m/s dan 2 m/s maka kecepatan awal B adalah . . . 
-\includegraphics[width=8cm]{pic/mom1}
-\pilgani{
-        \item 6 m/s
-        \item 3 m/s
-        \item 1,6 m/s
-        \item 1,2 m/s
-        \item 0,4 m/s
-        }
-\vspace{2cm}
-
-\item Benda bermassa 0,5 kg bergerak ke timur 2 m/s, tabrakan dengan benda lain 0,3 kg m/s ke barat. Setelah tabrakan benda 0,3 kg bergerak 2 m/s ke timur. Berapa kecepatan benda 0,5 kg? . . . . arahnya ke . . . .
-\vspace{2cm}
-
-
-\textbf{Jenis tumbukan, koefisien restitusi $e$}
-        \begin{enumerate}
-\item Lenting sempurna
-     \daftar{
-        \item $e =1 $
-        \item $\Sigma p = \Sigma p' $
-        \item Energi kinetik kekal $EK=EK'$
-        }
-
- \item Lenting Sebagian
-        \daftar{
-        \item $0<e<1$
-        \item $\Sigma p = \Sigma p'$
-        \item $EK> EK'$ artinya ada energi kinetik yang hilang, menjadi energi lain (misal: bunyi, panas, perubahan bentuk \textit{defomasi}}
-
- \item Tidak lenting sama sekali
-        \daftar{
-        \item $e=0$
-        \item $\Sigma p = \Sigma p'$
-        \item setelah bertumbukan kedua benda menjadi satu, sehingga 
-        \item $m_Av_A + m_Bv_B = (m_A + m_B)v'$
-        }
-        \end{enumerate}
-
-Koefisien restitusi
-
-$$ e = \frac{-(v_2'-v_1')}{v_2-v_1} = \sqrt{\frac{h'}{h}} $$
-$$ v = \sqrt{ 2gh}$$
-\includegraphics[height=5cm]{pic/mom2}
-
-Keterangan:
-
-$v_1'$, $v_2'$ adalah kecepatan akhir\\
-$v_1$, $v_2$ kecepatan awal\\
-$h'$ ketinggian akhir, $h$ ketinggian awal\\
-
-\item[ex] Dua buah benda dengan massa sama, 0.1 kg bergerak dengan kecepatan 10 m/s dan 8 m/s saling mendekat. Jika terjadi lenting sempurna tentukan kecepatan masing-masing setelah tumbukan
-
-\vspace{1cm}
-\hide{
-\begin{tikzpicture}
-\foreach \x /\y/\z in {0/A/{0,1kg},4/B/{0,1kg}} {
-\draw (\x,0) circle (0.2) node[scale=0.7]{\y};
-\node at (\x,0.5) [scale=0.8]{\z};}
-\draw[->] (0.2,0)--node[midway, yshift=0.4cm,scale=0.7]{10 m/s}(1,0);
-\draw[->] (3.8,0)--node[midway, yshift=0.4cm,scale=0.7]{8 m/s}(3,0);
-\end{tikzpicture}
-
-Diketahui:
-
-\begin{tabular}{p{0.5cm} p{1mm} p{2cm} p{1cm} p{0.5cm} p{2cm} }
-$m_A$ &= &0.1 kg  & & &\\
-$m_B$ &= &0.1 kg  & & &\\
-$v_A$ &= &10 m/s  & & &\\
-$v_B$ &= &-8 m/s  & & &\\
-$e$ &= &1  & & &\\
-\end{tabular}
-
-Ditanya : $v_A'$ atau $v_1'$ dan $EK_A'$ ?
-
-Jawab:
-
-Karena lenting sempurna maka berlaku
-\begin{align*}
-e &= \frac{-(v_2'-v_1')}{v_2-v_1}\\
-1 &= \frac{-v_2'+v_1'}{-8-(10)}\\
-1 &= \frac{-(v_2'-v_1')}{-18}\\
-\coret{-}18 &= \coret{-}(v_2'-v_1')\\
-18 &= v_2' -v_1'
-\end{align*}
-Berlaku pula persamaan kekekalan momentum, massa sama
-\begin{align*}
-\Sigma p &= \Sigma p\\
-\coret{m_A}v_1 + \coret{m_B}v_2 &= \coret{m_A}v_1' + \coret{m_B}v_2' \\
-10-8 &= v_1' + v_2'\\
-2 &= v_1' + v_2'
-\end{align*}
-Kemudian proses eliminasi sehingga 
-\begin{align*}
-18 &= v_2' -v_1'\\
-2 &= v_2' + v_1'\\
-\text{----}&\text{----------------(-)}\\
-16 &=-2v_1'\\
-v_1' &= -8 \text{ m/s}
-\end{align*}
-energi Kinetiknya $\frac{1}{2}mv^2=3,2$ J
-
-Jika mereka \textbf{MASSA SAMA dan LENTING SEMPURNA} maka hanya bertukar kecepatan. Sehingga $v_1'=v_2=-8$ dengan arah ke kiri. }
-
-\item Sebuah benda berada pada ketinggian 80 cm. Setelah tumbukan benda memantul. Jika koefisien restitusi benda dan lantai adalah 0,2, maka ketinggian setelah pantulan adalah . . .
-\vspace{2cm}
-
-
-\item Berdasarkan soal sebelumnya, dengan koefisien 0,2 maka kecepatan sesaat setelah pantulan adalah . . . 
-\vspace{2cm}
-
-
-
-\item Benda A dengan massa 2 kg bergerak ke arah kanan dengan kecepatan 3 m/s bergerak menabrak benda B bermassa 1 kg yang sedang diam. Jika tumbukan yang terjadi adalah tumbukan lenting sempurna, maka kecepatan masing-masing adalah . . . 
-\pilgani{
-        \item 1 m/s dan -4 m/s
-        \item 4 m/s dan 1 m/s
-        \item 1 m/s dan 4 m/s
-        \item 1,5 m/s dan 2 m/s
-        \item -1 m/s dan 2 m/s
-        }
-
-\vspace{4cm}
-
-\item Benda A dan B berturut-turut massanya 2 kg dan 1 kg dengan kecepatan saling mendekat dengan kecepatan $v_A$ = 4m/s dan $v_B$ = 1 m/s. Jika kemudian kedua benda bertumbukan lenting sebagian dengan koefisien restitusi diketahui 0,5, maka kecepatan benda B setelah bertumbukan adalah . . .
-\pilgani{
-        \item 8 m/s
-        \item -8 m/s
-        \item 6 m/s
-        \item -6 m/s
-        \item 4 m/s
-        }
-\vspace{4cm}
-
-
-
-
-\textbf{ Impuls }\\
-Impuls adalah gaya selama waktu tertentu menyebabkan perubahan momentum. Jika ditulis sebagai persamaan
-$$ I = F.\Delta t = \Delta p = m(v'-v)$$
-Impuls juga dapat diperoleh dengan menghitung luas grafik $F-\Delta t$. Luas di atas sumbu $x$ dikurangi luas di bawah sumbu $x$.
-\begin{center}
-\includegraphics[height=3cm]{pic/impuls}
-\end{center}
-\item Di atas suatu bidang licin diletakkan balok bermassa 1 kg dalam keadaan diam. Kemudian balok tersebut dikenai gaya tetap 2 N selama 2 sekon. Jika faktor gaya gesekan diabaikan, maka kelajuan balok sesaat setelah gaya dihilangkan adalah . . . .(dalam m/s)
-\pilgani{
-        \item 4,0
-        \item 3,5
-        \item 3,0
-        \item 2,5
-        \item 2,0}
-
-\vspace{2cm}
-
-
-\item Sebuah mobil bak bermassa 2.000 kg melaju dengan kecepatan 10 m/s menabrak tembok jembatan dalam waktu 0,1 detik. Gaya rata-rata pada mobil selama berlangsungnya tabrakan adalah . . .
-\pilgani{
-        \item 2$\times 10^2$ N
-        \item 2$\times 10^3$ N
-        \item 2$\times 10^4$ N
-        \item 2$\times 10^5$ N
-        \item 2$\times 10^6$ N
-        }
-
-\vspace{2cm}
-
-
-
-\item Bola bekel massanya 200 gram dijatuhkan dari ketinggian 80 cm tanpa kecepatan awal. Setelah menumbuk lantai, bola bekel memantul kembali dengan kecepatan 1 m/s. Impuls yang terjadi pada saat bola mengenai lantai adalah . . . 
-\pilgani{
-        \item 1,6 Ns
-        \item 1,5 Ns
-        \item 1,0 Ns
-        \item 0,8 Ns
-        \item 0,6 Ns
-        }
-\vspace{2cm}
-
-
-\item Impuls yang dibutuhkan untuk menambah kecepatan sebuah mobil yang bermassa 100 kg dari 36 km/jam menjadi 108 km/jam adalah . . .
-\pilgani{
-        \item 1.000 Ns
-        \item 2.000 Ns
-        \item 3.000 Ns
-        \item 4.000 Ns
-        \item 5.000 Ns
-        }
+\item Sebuah benda bergerak secara harmonis dengan persamaan $$y = 0,02 \sin (20\pi t) $$
+Tentukan:
+\begin{enumerate}[label=\alph*.]
+\item Amplitudo
+\item frekuensi
+\item simpangan saat t = 1/40 s
+\item simpangan saat sudut fasenya 60$^o$
+\item persamaan kecepatannya
+\item kecepatan maksimum
+\item kecepatan saat t = 1/60 s
+\item persamaan percepatannya
+\item percepatan maksimum
+\end{enumerate}
 \vspace{6cm}
 
-\textbf{LATIHAN CAMPURAN}
-
-\item Perhatikan grafik gaya ($F$) vs waktu ($t$) di bawah ini!\\
-\begin{tikzpicture}[scale=0.15]
-
-\draw [gray!40] (0,0) grid [step=2cm] (20,13);
-\draw [<->](0,13)node [above left] {F}--(0,0)--(23,0)node [below right] {t};
-\foreach \l / \y  in {0/0,0.04/4,0.08/8,0.12/12}
-{ \node at (0,\y)[left,scale=.7]{\l}; 
-}
-\node at (10,0) [below, scale=0.7] {0,20}; 
-\node at (20,0) [below, scale=.7] {0,40}; 
-
-\draw(0,12) --(20,0);
-\end{tikzpicture}\\
-Besar impuls adalah . . . . \\
-\pilgan{
-\item 0,024 Ns
-\item 0,011 Ns
-\item 0,005 Ns
-\item 0.0101 Ns
-\item 0,204 Ns
-}
-\item Gambar di bawah ini menunjukkan resultan gaya yang bekerja pada suatu benda terhadap waktu. Besar perubahan momentum benda setelah 15 s adalah . . . .\\
-\begin{tikzpicture}[scale=0.2]
-\draw [<->](0,12)node [above left] {F}--(0,0)--(17,0)node [below right] {t};
-\foreach \x  in {5,10,15}
-{ \node at (\x,0)[below,scale=0.7]{\x}; 
-} 
-\draw(0,10) node [left,scale=0.7] {10}--(5,10)--(15,0);
-\draw[dashed](5,10)--(5,0)--(10,0)--(10,5)--(0,5);
-\node at (0,5) [left,scale=1.2] {5};
-\end{tikzpicture}\\
-\pilgan{
-\item 50 Ns
-\item 100 Ns
-\item 150 Ns
-\item 200 Ns
-\item 250 Ns
-}
-
-\item Seorang nelayan naik perahu yang bergerak dengan kecepatan 4 m/s. Massa perahu dan orang masing-masing 200 kg dan 50 kg. Pada suatu saat orang tadi meloncat dari perahu dengan kecepatan 4 m/s searah gerak perahu. Kcepatan perahu sesaat orang tadi meloncat adalah . . .
+\item Sebuah benda melakukan gerak harmonik dengan frekuensi 10 Hz dan amplitudo 5 cm. Pada suatu saat simpangannya berada pada 3 cm. Berapa kecepatan benda saat itu?
 \pilgani{
-        \item 1 m/s
-        \item 2 m/s
-        \item 3 m/s
-        \item 4 m/s
-        \item 6 m/s
-        }
-\vspace{2cm}
+\item 50 cm/s
+\item 50$\pi$cm/s
+\item 100$\pi$ cm/s
+\item 80$\pi$ cm/s
+\item 80$\sqrt{3}\pi$ cm/s
+}
+\vspace{3cm}
 
-
-\item Bola pertama bergerak ke arah kanan dengan kelajuan 20 m/s mengejar bola kedua yang bergerak dengan kelajuan 10 m/s ke kanan sehingga terjadi tumbukan lenting sempurna. \\
-\includegraphics[width=4cm]{pic/mom6}\\
-Jika massa kedua bola adalah sama, masing-masing sebesar 1 kg, tentukan kecepatan masing-masing bola setelah tumbukan! 
+\item Kecepatan suatu benda adalah setengah dari kecepatan maksimumnya. Jika simpangan maksimum benda adalah 6 cm, maka simpangannya saat itu adalah . . . .
+\pilgani{
+\item 3 cm
+\item 3$\sqrt{3}$ cm
+\item 6 cm
+\item 3$\sqrt{2}$ cm
+\item 0 cm
+}
 \vspace{5cm}
 
+\textbf{Persamaan Osilasi Pegas dan Bandul  $\omega$}\\
+\includegraphics[height=4cm]{pic/pegas}
+\includegraphics[height=4cm]{pic/bandul}
 
-\item Balok bermassa 2 kg berada dalam keadaan diam. Peluru dengan massa 0,1 kg bergerak dengan kecepatan 100 m/s. Peluru menembus balok, kecepatan peluru setelah keluar dari balok adalah 50 m/s. Maka kecepatan balok setelah ditembus peluru adalah . . . .\\
-\includegraphics[width=4cm]{pic/mom4}\\
+\begin{tabular}{p{2cm} p{2cm}}
+$$\omega=\sqrt{\frac{k}{m}}$$ & $$\omega=\sqrt{\frac{g}{l}}$$ 
+\end{tabular}
 \vspace{3cm}
 
-\item Peluru bermassa 100 gram dengan kelajuan 200 m/s menumbuk balok bermassa 1900 gram yang diam dan bersarang di dalamnya. \\
-\includegraphics[width=4cm]{pic/mom5}\\
-Tentukan kelajuan balok dan peluru di dalamnya!
+\item Sebuah pegas dengan konstanta 300 N/m digantungi oleh massa 3 kg. Maka frekuensi dan periode pegas tersebut adalah . . . .
+
 \vspace{3cm}
 
-\item Bola bertali m memiliki massa 0,1 kg dilepaskan dari kondisi diam hingga menumbuk balok M = 1,9 kg seperti diperlihatkan gambar berikut! \\
-\includegraphics[width=4cm]{pic/mom7}\\
-Jika bola m dan balok M bergerak bersama setelah bertumbukan dan panjang tali pengikat bola m adalah 80 cm, tentukan kelajuan keduanya!
+\item  Bandul dengan panjang tali 40 cm digantungi beban, maka frekuensi dan periode bandul adalah . . . 
 \vspace{3cm}
 
-\item Balok dengan massa 49,9 kg digantung dengan tali sepanjang 1,5 m. Pada saat itu peluru dengan massa 0,1 kg ditembakkan dan bersarang dalam balok sehingga naik 5 cm. Kecepatan peluru sebelum menumbuk adalah . . .\\
-\includegraphics[width=8cm]{pic/mom3}
-\pilgani{
-        \item 0,5 m/s
-        \item 5 m/s
-        \item 50 m/s
-        \item 500 m/s
-        \item 5000 m/s
-        }
-\vspace{4cm}
 
-\item Sebuah granat mula-mula diam. Suatu saat meledak ke arah yang berlawanan dengan perbandingan massa 1 : 2. Energi kinetik yang dilepaskan adalah 3$\times 10^5$ J. Maka perbandingan energi kinetik pecahan pertama dan kedua adalah . . .
-\pilgani{
-        \item 1 : 1
-        \item 2 : 1
-        \item 1 : 3
-        \item 5 : 1
-        \item 7 : 5
-        }
-\vspace{4cm}
+\item Bandul dengan panjang tali 10 cm digantungi beban dengan massa 200 gram. Jika amplitudo benda tersebut adalah 4cm, maka kecepatannya saat simpangannya 2cm adalah . . . .
 
-\item Balok bermassa $M$ berada di atas tepi meja setinggi $h$. Jika peluru bermassa $m$ menumbuk dan bersarang pada balok, dan jatuh sehingga menempuh jarak sejauh $S$ dari kaki meja. Maka kecepatan peluru sebelum menumbuk balok adalah . . . 
-\pilgan{
-\item $v = \frac{(m+M)}{m} S \sqrt{\frac{h}{g}}$
-\item $v = \frac{(m+M)}{m} S \sqrt{\frac{g}{2h}}$
-\item $v = \frac{(m+M)}{m} 2S\sqrt{\frac{g}{h}}$
-\item $v = \frac{(m+M)}{m} 2S\sqrt{\frac{h}{2g}}$
-\item $v = \frac{(m+M)}{m} 3S\sqrt{\frac{2g}{h}}$
-}
- 
+\vspace{3cm}
 
-\end{enumerate}
+
+\end{enumerate} \end{multicols*}\end{document} 
 
 
 
-\end{multicols*}\end{document}
 
- 
+
