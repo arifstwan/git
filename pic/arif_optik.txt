@@ -1,0 +1,262 @@
+\item Seseorang menderita rabun dekat dengan titik dekat 50 cm ingin membaca pada jarak baca normal. Jenis lensa kacamata yang harus digunakan dan jarak fokusnya adalah . . 
+\pilgani{
+	\item cembung dengan fokus 50 cm
+	\item cekung dengan fokus 33,3 cm
+	\item rangkap dengan fokus 25 cm
+	\item cembung dengan fokus 33,3 cm
+	\item cekung dengan fokus 50 cm }
+\vspace{2cm}
+
+\item Seseorang penderita hipermetropi memiliki titik dekat 50 cm hendak membaca pada jarak baca normal. Orang tersebut memerlukan kacamata berkekuatan . . . 
+\pilgani{
+	\item -2 Dioptri
+	\item -1/2 Dioptri
+	\item +1/2 Dioptri
+	\item +2 Dioptri
+	\item +4 Dioptri }
+\vspace{2cm}
+
+\item Aminah ingin membelikan kacamata untuk temannya yang hanya dapat melihat benda terjauh pada jarak 3 meter. Jenis kacamata apakah yang harus dibeli Aminah .
+\pilgani{
+	\item -1/3 D
+	\item -2/3 D
+	\item +2/3 D
+	\item +1/3 D
+	\item 1 D }
+\vspace{3cm}
+
+\item Seseorang bermata miopi hanya dapat melihat benda yang jelas paling jauh jaraknya 50 cm. Kekuatan lensa kacamata yang harus digunakan agar orang tersebut dapat melihat jelas pada benda-benda jauh adalah . . .
+\pilgani{
+	\item 2 Dioptri
+	\item 4 Dioptri
+	\item 1 Dioptri
+	\item -4 Dioptri
+	\item -2 Dioptri }
+\vspace{3cm}
+
+\item Seorang penderita presbiopi mempunyai titik dekat 50 cm dan titik jauh 2,5 cm. Kekuatan lensa yang harus digunakan adalah . . 
+\pilgani{
+	\item 2 D dan -0,4 D
+	\item 2 D dan 0,4 D
+	\item 2,5 D dan -2 D
+	\item 4 D dan -2 D
+	\item 4 D dan -4 D }
+\vspace{3cm}
+
+
+
+
+\item Sebuah lup mempunyai jarak fokus 5 cm dipakai melihat sebuah benda kecil yang berjarak 5 cm dari lup. Jika dilihat dengna mata akomodasi, maka perbesaran anguler dari lup adalah . . .
+\pilgani{
+	\item 2
+	\item 4
+	\item 25/6
+	\item 5
+	\item 25/4}
+\vspace{3cm}
+
+\item Sebuah lup dengan kekuatan 10 dioptri digunakan untuk mengamati sebuah benda pada jarak 40 cm tapi mata mundur 5 cm. Jika benda didekatkan lagi 7/9 dengan mata tetap akomodasi, maka perbesaran lup adalah . . . kali
+\pilgani{
+	\item 3
+	\item 10/3
+	\item 4
+	\item 10/4
+	\item 12 }
+\vspace{3cm}
+
+\item Seorang siswa berpenglihatan normal (jarak baca 25 cm) mengamati benda kecil melalui lup dengan akomodasi maksimum. Jika benda itu 10 cm di depan lup, maka . . .
+\pernyataan{
+	\item jarak fokus lensa lup 16$\frac{2}{3}$
+	\item kekuatan lensa lup 6 D
+	\item perbesaran bayangan 2,5 kali
+	\item perbesaran bayangan menjadi 2 kali perbesaran tanpa akomodasi
+}
+
+\vspace{3cm}
+\item Ketika membaca, jarak terdekat yang dapat dilihat seroang kakek adalah 40 cm. Kekuatan lensa kacamata yang diperlukan kakek tersebut agar dapat melihat dengan normal adalah . . .
+\pilgani{
+	\item 3/2 dioptri
+	\item 3/4 dioptri
+	\item 2/3 dioptri
+	\item 1/4 dioptri
+	\item 4/3 dioptri}
+\vspace{3cm}
+
+\item Sebuah mikroskop mempunyai lensa objektif yang jarak titik apinya 2 cm. Sebuah objek diletakkan 2,2 cm di bawah objektif. Jika perbesaran okuler 10 kali, maka perbesaran mikroskop sama dengan . . . 
+\pilgani{
+	\item 300 kali
+	\item 110 kali
+	\item 220 kali
+	\item 100 kali
+	\item 200 kali}
+\vspace{3cm}
+
+\item Sebuah mikroskop mempunyai jarak fokus objektif 8 mm, dan jarak fokus okuler 60 mm. Jika preparat ditempatkan 10 mm di depan objektif dan mata melihat tanpa akomodasi, maka panjang tabung mikroskop tersebut adalah . . 
+\pilgani{
+	\item 100 cm
+	\item 60 cm
+	\item 40 cm
+	\item 20 cm
+	\item 10 cm }
+\vspace{3cm}
+
+\item Teropong bintang dengan perbesaran anguler 10 kali. Bila jarak titik api objektifnya 50 cm, maka panjang teropong . . . 
+\pilgani{
+	\item 5 cm
+	\item 35 cm
+	\item 45 cm
+	\item 50 cm
+	\item 55 cm }
+\vspace{3cm}
+
+\item Sifat dan kedudukan bayangan yang dihasilkan oleh lensa objektif sebuah teropong bintang . . .
+\pilgani{
+	\item nyata, terbalik, tepat di titik fokus lensa objektif
+	\item nyatak, tegak dan tepat di titik fokus lensa okuler
+	\item nyata, tegak dan tepat di titik fokus lensa objektif
+	\item maya, terbalik dan tepat di titik fokus lensa okuler
+	\item maya, terbalik dan tepat di titik fokus lensa objektif
+}
+\vspace{2cm}
+
+\item Sebuah teropong dipakai untuk melihat bintang yang menghasilkan perbesaran anguler 6 kali. Jarak fokus lensa objektif 30 cm, jarak fokus okulernya (mata tak berakomodasi) adalah . . .
+\pilgani{
+	\item 3,5 cm
+	\item 5 cm
+	\item 7 cm
+	\item 10 cm
+	\item 30 cm }
+\vspace{3cm}
+
+\item Sebuah teropong bintang memiliki jarak fokus objektif 75 cm dan jarak fokus okuler 5 cm. Perbesaran sudut teleskop dengan mata berakomodasi pada jarak 50 cm adalah . . .
+\pilgani{
+	\item 9 kali
+	\item 18 kali
+	\item 20 kali
+	\item 36 kali
+	\item 45 kali }
+
+\item Sebuah teropong bintang memiliki panjang fokus lensa okuler 15 mm. Saat meneropong objek langit, citranya akan nampak jelas ketika jarak antara objektif dan okuler sebesar 945 mm. Jika diinginkan perbesaran menjadi 310 kali, maka lensa okuler tersebut harus diganti dengan okuler lain dengan panjang fokus . . . 
+\pilgani{
+	\item 3 mm
+	\item 5 mm
+	\item 10 mm
+	\item 20 mm
+	\item 25 mm
+}
+\vspace{3cm}
+
+\item Sebuah lup dengan panjang fokus lensa 5 cm digunakan untuk melihat sebuah benda kecil. Dengan asumsi titik dekat normal adalah 25 cm, tentukan perbesaran lup untuk mata pengamat jika berakomodasi maksimum . . .
+\pilgani{
+	\item 4 kali
+	\item 5 kali
+	\item 6 kali
+	\item 12 kali
+	\item 20 kali }
+\vspace{2cm}
+
+\item Sebuah lup dengan panjang fokus lensa 5 cm digunakan untuk melihat sebuah benda kecil. Dengan asumsi titik dekat normal adalah 25 cm, tentukan perbesaran lup untuk mata pengamat jika tidak berakomodasi . . .
+\pilgani{
+	\item 4 kali
+	\item 5 kali
+	\item 6 kali
+	\item 12 kali
+	\item 20 kali }
+\vspace{2cm}
+
+\item Sebuah lup dengan panjang fokus lensa 5 cm digunakan untuk melihat sebuah benda kecil. Dengan asumsi titik dekat normal adalah 25 cm, tentukan perbesaran lup untuk mata pengamat jika berakomodasi pada jarak 20 cm . . .
+\pilgani{
+	\item 1,25 kali
+	\item 2,50 kali
+	\item 6,25 kali
+	\item 8,12 kali
+	\item 10,25 kali }
+\vspace{2cm}
+
+\item Seorang tukang reparasi jam tangan menggunakan  sebuah lensa lup (kaca pembesar)  untuk melihat bagian-bagian mesin jam. Saat digunakan sesuai fungsinya bayangan yang dihasilkan lensa lup tersebut  memiliki sifat . . .
+\pilgani{
+	\item Maya, terbalik, diperkecil
+	\item Maya, tegak, diperbesar
+	\item Nyata, terbalik, diperbesar
+	\item Nyata, tegak, diperbesar
+	\item Nyata, tegak, diperkecil
+}
+\vspace{2cm}
+
+\item Sebuah lensa berjarak fokus 5 cm digunakan sebagai lup. Jika mata normal menggunakan lup tersebut dengan berakomodasi maksimum, maka perbesaran anguler lup adalah . . . 
+\pilgani{
+	\item 3 kali
+	\item 4 kali
+	\item 5 kali
+	\item 6 kali
+	\item 8 kali }
+\vspace{2cm}
+
+\item Seorang anak menggunakan sebuah lup untuk melihat sebuah benda. Jika perbesaran yang diperoleh anak tersebut adalah 11 kali saat pengamatan dilakukan dengan mata berakomodasi maksimum maka fokus lensa lup yang digunakan besarnya adalah . . . (sn = 30 cm)
+\pilgani{
+	\item 2 cm
+	\item 3 cm
+	\item 4 cm
+	\item 5 cm
+	\item 6 cm }
+\vspace{2cm}
+
+\item Sebuah lensa berjarak fokus 4 cm digunakan sebagai lup. Agar mata melihat tanpa berakomodasi, maka letak benda tersebut dari lup adalah . . .
+\pilgani{
+	\item 2 cm
+	\item 3 cm
+	\item 4 cm
+	\item 6 cm
+	\item 8 cm
+}
+\vspace{2cm}
+
+\item Sebuah mikroskop memiliki jarak titik api obyektif 2,0 cm. Sebuah benda diletakkan di bawah objektif pada jarak 2,2 cm. Panjang mikroskop 24,5 cm dan pengamat dilakukan tanpa akomodasi. Jika pengamat bermata normal maka perbesaran total mikroskop bernilai . . .
+\pilgani{	
+	\item 20 kali
+	\item 25 kali
+	\item 50 kali
+	\item 75 kali
+	\item 100 kali
+}
+\vspace{4cm}
+
+
+
+
+
+\item Lintasan berkas sinar ketika melalui sistem optik teropong bintang ditunjukkan seperti gambar. \\
+\includegraphics[width=8cm]{pic/teropong-bintang} \\
+Berdasarkan gambar di atas, perbesaran bayangan untuk mata tidak berakomodasi adalah . . .
+\pilgani{
+	\item 60 kali
+	\item 50 kali
+	\item 45 kali
+	\item 40 kali
+	\item 30 kali
+}
+\vspace{3cm}
+
+\item Amatilah diagram pembentukan bayangan oleh mikroskop berikut ini!\\
+\includegraphics[width=7cm]{pic/bayangan-mikroskop2}\\
+Jika berkas sinar yang keluar dari lensa okuler merupakan berkas sejajar dan mata yang mengamati berpenglihatan normal maka perbesaran mikroskop adalah . . .
+\pilgani{
+	\item 10 kali
+	\item 18 kali
+	\item 22 kali
+	\item 30 kali
+	\item 50 kali}\vspace{3cm}
+
+\item Perhatikan gambar pembentukan bayangan teropong berikut ini!\\
+\includegraphics[width=7cm]{pic/bayangan-teropong}\\
+Panjang teropong 110 cm dan jarak fokus lensa objektif 1 m. Perbesaran teropong untuk mata tidak berakomodasi adalah . . 
+\pilgani{
+	\item 20 kali
+	\item 15 kali
+	\item 10 kali
+	\item 8 kali
+	\item 5 kali }
+\vspace{3m}
+
+
+
