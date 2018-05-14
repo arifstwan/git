@@ -1,0 +1,193 @@
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Kuis Bunyi} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}
+
+\begin{enumerate}
+\item Sebuah tali dengan panjang 10m, dan massa 1g. Jika tali tersebut digantungi beban dengan massa 0,4 kg maka kecepatan bunyi pada tali tersebut adalah . . . .
+\pilgani{ 
+        \item 100 m/s
+        \item 200 m/s
+        \item 400 m/s
+        \item 800 m/s
+        \item 330 m/s
+        }
+
+\item Pada soal no 1) jika tali pada saat itu menimbulkan 3 perut, maka frekuensi yang timbul adalah . . .
+\pilgani{
+        \item 20 Hz
+        \item 30 Hz
+        \item 40 Hz
+        \item 60 Hz
+        \item 100 Hz
+        }
+
+\item Suatu pipa organa terbuka dengan panjang 40 cm mengeluarkan nada dasar. Jika pada saat itu beresonansi dengan pipa organa tertutup, dengan keadaan dua simpul, maka panjang pipa organa tertutup tersebut adalah . . . 
+\pilgani{
+        \item 20 cm
+        \item 40 cm
+        \item 60 cm
+        \item 80 cm
+        \item 100 cm
+        }
+
+\item Suatu pipa organa menghasilkan frekuensi berturut-turu 490,560,630. Frekuensi nada atas pertama pipa organa tersebut adalah . . . .
+\pilgani{
+        \item 70 Hz
+        \item 140 Hz
+        \item 210 Hz
+        \item 280 Hz
+        \item 350 Hz
+        }
+
+
+\item Suatu speaker menggunakan daya 4$\pi \times 10^{-4}$. Intensitas yang diterima pada jarak 10 m adalah . . .(Watt/m$^2$)
+\pilgani{
+        \item $1\times 10^{-5}$
+        \item $4\pi \times 10^{-6}$
+        \item $4 \pi \times 10^{-7}$
+        \item $4 \times 10^{-6}$
+        \item $1 \times 10^{-6}$
+        }
+
+
+\item Speaker pada soal di atas pada jarak tersebut menghasilkan taraf intensitas sebesar  . . . .
+\pilgani{
+        \item 18 dB
+        \item 6 dB
+        \item 60 dB
+        \item -60 dB
+        \item -18 dB
+        }
+
+\item Pemborong berinisatif meningkatkan taraf intensitas musik dengan menambah speaker. Pemborong menambahkan sehingga jumlah speaker sekarang adalah 1000 buah. Maka taraf intensitas di titik tersebut adalah . . . 
+\pilgani{
+        \item 60 dB
+        \item 70 dB
+        \item 80 dB
+        \item 90 dB
+        \item 100 dB
+        }
+\item Pada jarak 10 m, seseorang mendengar intensitas suara mesin pesawat 1 W/m$^2$. Jika pengamat lain berada pada jarak 20 m, maka intensitas yang di dengar adalah . . .
+\pilgani{      
+        \item 20 W/m$^2$
+        \item 0,5 W/m$^2$
+        \item 0,25 W/m$^2$
+        \item 2  W/m$^2$
+        \item 4 W/m$^2$
+        }
+        
+\item Pada jarak 100 m, taraf intensitasnya adalah 20dB. Maka intensitas pada jarak 1 meter adalah . . . W/m$^2$
+\pilgani{
+        \item 10$^{-6}$
+        \item 10 
+        \item 40
+        \item 60
+        \item 10$^{-4}$
+}        
+        
+\item Sifat yang dimiliki gelombang bunyi, \textit{kecuali} . . . .
+\pilgani{
+        \item pemantulan
+        \item pembiasan
+        \item interferensi
+        \item difraksi
+        \item polarisasi
+        }
+        
+ \end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+

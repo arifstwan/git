@@ -1,0 +1,171 @@
+\documentclass[10pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Latihan Ulangan Gerak Harmonik} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}\raggedcolumns
+
+\begin{enumerate}
+\item Sebuah benda bergetar dengan persamaan $y=2\sin(50\pi t)$ cm, maka amplitudo dan frekuensi benda tersebut adalah . . .
+\pilgani{
+   \item 2 cm dan 50 $\pi$ Hz
+   \item 2 cm dan 25 $\pi$ Hz
+   \item 4 cm dan 25 Hz
+   \item 2 cm dan 25 Hz
+   \item 1 cm dan 50 Hz}
+\vspace{2cm}
+
+\item Persamaan kecepatan yang benar untuk persamaan $y=0,04 \sin (20\pi t)$ adalah . . .
+\pilgani{
+   \item $v=0,04 \cos (20\pi t)$
+   \item $v=0,8 \cos (20\pi t)$
+   \item $v=8 \sin (20\pi t)$
+   \item $v=80 \cos (20\pi t)$
+   \item $v=0,04 \sin (20\pi t)$}
+\vspace{2cm}
+
+\item Suatu sistem bergerak secara harmonis dengan persamaan $y=0,2 \sin (10\pi t)$, percepatan maksimal dan percepatan saat $t = 10,225$ s adalah . . .
+\pilgan{
+   \item $a_\text{max} = 20 \pi^2$ m/s$^2$ dan $a=10\sqrt{2}\pi^2$ m/s$^2$ 
+   \item $a_\text{max} = 10 \pi^2$ m/s$^2$ dan $a=10\pi^2$ m/s$^2$ 
+   \item $a_\text{max} = 2 \pi^2$ m/s$^2$ dan $a=10\sqrt{3}\pi^2$ m/s$^2$ 
+   \item $a_\text{max} = 2 \pi^2$ m/s$^2$  dan $a=10\sqrt{2}\pi^2$ m/s$^2$ 
+   \item $a_\text{max} = 20 \pi^2$ m/s$^2$ dan $a=10\pi^2$ m/s$^2$ }
+\vspace{3cm}
+
+\item Suatu sistem bergerak harmonis dengan frekuensi 5 Hz, dengan amplitudo 5 cm. Pada suatu saat sistem menyimpang sejauh 4 cm. Pada saat tersebut kecepatan harmonis adalah . . . 
+\pilgani{
+   \item 30 cm
+   \item 30$\sqrt{2}$ cm
+   \item 30$\sqrt{3}$ cm
+   \item 40 cm
+   \item 40$\sqrt{3}$ cm
+}
+\vspace{4cm}
+
+
+\item Balok dengan massa 4 kg digantung pada dua pegas yang disusun paralel dengan konstanta masing-masing 200 N/m. frekuensi dan energi potensial saat menyimpang 1 cm adalah . . . 
+\pilgani{
+   \item $\frac{5}{\pi}$ Hz dan 0,02 J
+   \item $\frac{5}{\pi}$ Hz dan 0,04 J
+   \item $\frac{5}{\pi}$ Hz dan 0,2 J
+   \item $5\pi$ Hz dan 0,2 J
+   \item $5\pi^2$ Hz dan 0,02 J}
+\vspace{3cm}
+
+\item Sebuah bandul dengan massa 200 gram digantung pada tali 160 cm. Jika percepatan gravitasi di tempat itu adalah 10 m/s$^2$ maka frekuensi dan periode bandul adalah . . . 
+\vspace{1cm}
+
+\item Persamaan kecepatan merambat suatu gelombang, adalah $v = \lambda .f$. Tali dengan panjang 9 meter diikat pada kedua ujungnya. Pada tali tersebut terbentuk 4 lembah dan 5 puncak. Tali naik turun sebanyak 5 kali dalam satu detik. Maka jarak simpul ke dua dari sisi kiri tali, dan kecepatan rambat gelombang adalah . . . .
+\vspace{3cm}
+
+\item Sebuah partikel melakukan ayunan harmonis sederhana.Tenaga kinetik partikel adalah Ek dan tenaga potensialnya. Ep, tenaga totalnya adalah ET. Ketika partikel berada di sepertiga posisi amplitudo, perbandingan EK/ET dan Ep/ET berturut-turut adalah . . 
+\pilgani{
+   \item 1 : 3 dan 2 : 3
+   \item 2 : 3 dan 1 : 3
+   \item 8 : 9 dan 1 : 9
+   \item 1 : 9 dan 8 : 9
+   \item 1 : 2 dan 1 : 1
+}
+\vspace{2cm}
+
+\item Pegas digantungi beban 1 kg sehingga bergetar dengan frekuensi $\frac{5}{\pi}$ Hz. Gaya pemulih saat beban menyimpang 2 cm adalah . . . (Joule)
+\vspace{2cm}
+
+\item Pada suatu saat energi potensial bandul sama dengan setengah dari energi total. Jika simpangan maksimum bandul adalah 4 cm, maka simpangan saat itu adalah . . .
+   
+
+\end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+

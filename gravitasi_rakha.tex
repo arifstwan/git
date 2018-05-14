@@ -1,0 +1,224 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=0.7cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+\begin{multicols*}{2}
+
+\begin{enumerate}
+\item Dua buah benda dengan massa masing-masing 20 kg dan 8 kg berada pada jarak 4 m. Maka gaya interaksi kedua benda adalah . . . .
+\pilgani{
+    \item $6,67 \times 10^{-11}$ N
+    \item $6,67 \times 10^{-10}$ N
+    \item $1,334 \times 10^{-10}$ N
+    \item $6,67 \times 10^{-12}$ N
+    \item $1,334\times 10^{-11}$ N
+    }
+
+\vspace{1cm}
+\item Benda A dan B massanya masing-masing 2 dan 4,5 kg. Jarak di antara A dan B adalah 30 m. Jika ada benda C dengan massa 4,78 kg akan diletakkan di antara kedua benda, maka jarak dari A agar gaya yang dirasakan C adalah nol adalah . . . . 
+\pilgani{
+    \item 4 m
+    \item 8 m
+    \item 12 m
+    \item 15 m
+    \item 20 m
+    }
+\vspace{3cm}
+
+\item Benda A, B, dan C masing-masing 4 kg, 9 kg, dan 12 kg. Ketiga benda membentuk segitiga siku-siku dengan A di siku. Jarak A dan B adalah 3 m, jarak A dan C adalah 4 m. Tentukan gaya yang dirasakan di A!
+\pilgani{
+    \item $6,67 \times 10^-11$ N
+    \item $6,67 \times 10^-10$ N
+    \item $3,35 \times 10^-10$ N
+    \item $1,34 \times 10^-10$ N
+    \item $6,67 \times 10^-9$ N
+}
+\vspace{3cm}
+
+\item Planet A memiliki massa 5 kali massa bumi, dan jari-jari 2 kali bumi. Perbandingan gravitasi di planet A dan bumi adalah . . . 
+\pilgani{
+    \item $\frac{4}{5}$
+    \item $\frac{5}{4}$
+    \item $\frac{2}{1}$
+    \item $\frac{1}{2}$
+    \item $\frac{6}{5}$
+}
+\vspace{3cm}
+
+\item Berat seorang astronot adalah 800 N di bumi. Jika astronot tersebut di planet yang massanya 5 kali bumi dan jari-jarinya 2 kali bumi, maka berat astronottersebut adalah . . . 
+\pilgani{
+    \item 200 N
+    \item 400 N
+    \item 600 N
+    \item 800 N
+    \item 1000 N
+}
+\vspace{3cm}
+
+\item Suatu benda di bumi beratnya $w$. Jika jari-jari planet 0,25 kali jari-jari bumi dan massa jenisnya 2 kali bumi, maka perbandingan berat di planet dan di bumi adalah . . 
+\pilgani{
+    \item $\frac{4}{1}$
+    \item $\frac{1}{4}$
+    \item $\frac{2}{1}$
+    \item $\frac{1}{2}$
+    \item $\frac{2}{3}$
+}
+\vspace{3cm}
+
+\item Jari-jari bumi 6,4$\times 10^6$ m, maka kelajuan orbit suatu roket yang berada di ketinggian 3 kali jari-jari bumi adalah . . . 
+\pilgani {
+    \item 4 km/s
+    \item 6 km/s
+    \item 8 km/s
+    \item 10 km/s
+    \item 16 km/s
+}
+\vspace{3cm}
+
+\item Jarak rata-rata planet X dari matahari 2,25 kali jarak rata-rata Bumi dari Matahari. Besar periode revolusi planet X tersebut adalah . . . 
+\pilgani{
+    \item 1,50 tahun
+    \item 1,75 tahun
+    \item 3,375 tahun
+    \item 3,75 tahun
+    \item 4,25 tahun
+}
+\vspace{3cm}
+
+\item Dua satelit beredar mengelilingi bumi dengan periode tetap. Perbandingan ketinggian satelit terhadap bumi adalah 4 : 9. Perbandingan periode kedua satelit tersebut adalah . . . .
+\pilgani{
+    \item 1 : 8
+    \item 8 : 5
+    \item 9 : 8
+    \item 8 : 27
+    \item 1 : 27
+}
+\vspace{3cm}
+
+
+\item Dua benda sedang tarik menarik dengan gaya F. Jika salah satu benda dijadikan massanya dua kali lipat, dan jaraknya dijadikan 2 kali lipat. Maka gaya interaksi kedua benda menjadi  . . . 
+\pilgani{
+    \item $\frac{1}{2}$
+    \item $\frac{2}{1}$
+    \item 1
+    \item $\frac{1}{4}$
+    \item $\frac{4}{1}$
+}
+\vspace{3cm}
+
+\item Suatu roket berada di permukaan planet. Jika roket ingin diluncurkan sampai ketinggian $2R$ maka kecepatan yang dibutuhkan adalah . . . 
+\pilgani{
+    \item $\left ( \frac{4GM}{3R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{5GM}{3R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{2GM}{5R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{GM}{2R} \right )^{\frac{1}{2}}$
+    \item $\left ( \frac{GM}{3R} \right )^{\frac{1}{2}}$
+}
+\vspace{3cm}
+
+
+
+\item Suatu benda bermassa $m$ berada di permukaan plnet yang massanya $M$ dan jari-jari $R$. Tentukan :
+\begin{enumerate}[label=\alph*]
+    \item Medan gravitasi
+    \item Energi potensial gravitasi
+    \item Potensial gravitasi
+    \item Jika digeser ke ketinggian $2R$ dari permukaan planet, tentukan point a-c
+    \end{enumerate}
+    
+\end{enumerate}
+
+\end{multicols*}
+
+
+ \end{document}
+
+
+
+
+
+

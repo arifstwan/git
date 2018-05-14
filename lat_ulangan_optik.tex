@@ -1,0 +1,173 @@
+\documentclass[10pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Latihan Optika Geometri} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}
+
+\begin{enumerate}
+\item Dua buah cermin dipasang berdekatan dengan sudut 30$^o$kemudian di depannya diletakkan sebuah benda, maka banyaknya bayangan yang terbentuk adalah . . .
+\pilgani{
+	\item 3
+	\item 6
+	\item 11
+	\item 20
+	\item 30
+}
+\vspace{2cm}
+
+\item Sebuah benda diletakkan 9 cm di depan cermin cekung yang memiliki jari-jari kelengkungan 20 cm. Sifat-sifat bayangan benda yang dihasilkan cermin adalah . . . 
+\pilgani{
+	\item Maya, tegak, diperbesar
+	\item Maya, tegakm diperkecil
+	\item Nyata, tegak, diperbesar
+	\item Nyata, terbalik, diperbesar
+	\item Nyata, terbalik, diperkecil
+}
+\vspace{3cm}
+
+\item Dua cermin yang masing-masing panjangnya 1,6 m disusun berhadapan seperti pada gambar di bawah ini. Jarak antara cermin 20 cm. Suatu berkas sinar jatuh tepat pada salah satu ujung cermin dengan sudut 30$^o$. Sinar akan keluar dari pasangan cermin setelah mengalami pemantulan sebanyak . . . 
+\pilgani{
+	\item 16
+	\item 13
+	\item 15
+	\item 9
+	\item 4
+}
+\vspace{4cm}
+
+\item Indeks bias udara besarnya 1, indeks bias air 4/3, dan indeks bias bahan suatu lensa tipis 3/2. Suatu lensa tipis yang kekuatannya di udara 4 dioptri di dalam air akan menjadi . . . 
+\pilgani{
+	\item 3/5 dioptri
+	\item 1 dioptri
+	\item 5/2 dioptri
+	\item 5/4 dioptri
+	\item 5/3 dioptri
+}
+\vspace{3cm}
+
+\item Sebuah benda diletakkan di muka cermin cekung yang mempunyai jarak titik api 15 cm. Agar bayangan yang terbentuk 3 kali lebih besar dan nyata, maka benda harus diletakkan di depan cermin sejauh??
+\pilgani{
+	\item 10 cm
+	\item 15 cm
+	\item 20 cm
+	\item 30 cm
+	\item 45 cm
+}
+\vspace{2cm}
+
+\item Sebuah lensa cembung yang terbuat dari suatu kaca berindeks bias 1,5 memiliki jarak fokus 2,5 cm di udara. jika lensa itu dicelupkan k dalam zat cair yang berindeks bias 1,3. Hitunglah jarak fokus lensa dalam cairan itu
+\pilgani{
+	\item 2,8 cm
+	\item 4,2 cm
+	\item 5,6 cm
+	\item 8,1 cm
+	\item 6,6 cm
+}
+\vspace{3cm}
+
+\item Bayangan yang terbentuk oleh lensa positif dari sebuah benda yang terletak pada jarak lebih besar dari f tetapi lebih kecil dari 2f dari lensa tersebut (f = jarak fokus lensa) bersifat . . . 
+\pilgani{
+\item Nyata, tegak, diperbesar
+\item Nyata, terbalik, diperbesar
+\item Nyata, tegak, diperbesar
+\item Nyata, tegak diperkecil
+\item Nyata, tegak, sama besar
+}
+ 
+
+
+\end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+

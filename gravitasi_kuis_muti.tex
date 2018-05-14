@@ -1,0 +1,159 @@
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Kuis Gravitasi} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+No callculator allowed !  
+$$ G = 6,7 \times 10^{-11}$$
+
+\begin{enumerate}
+
+\item Berat di bumi adalah 900N. Berat benda tersebut jika berada pada ketinggian 2R adalah. . . . \pilgani{
+    \item 225 N
+    \item 450 N
+    \item 1800 N
+    \item 180 N
+    \item 100 N
+}
+
+\item Berat seorang astronot di Bumi adalah 800 N. Astronot bepergian ke planet X yang mempunyai massa 16 kali bumi dan jari-jari 2 kali bumi. Maka berat astronot tersebut saat berada di ketinggian 3R dari permukaan planet X adalah . . . .
+\pilgani {
+    \item 3200 N
+    \item 3200/9 N
+    \item 800 N
+    \item 800/3 N
+    \item 200 N }
+
+\item Suatu planet mempunyai massa 4 kali bumi dan jari-jari 3 kali bumi. Maka percepatan gravitasi di planet tersebut adalah . . . 
+\pilgani{
+    \item 2$g$
+    \item $\frac{4}{3} g$
+    \item $\frac{3}{4} g$
+    \item $\frac{4}{9} g$
+    \item $\frac{9}{4} g$
+    }
+
+\item Seorang peneliti berada di planet yang berjari-jari 1000km. Jika percepatan gravitasi di planet adalah 8 m/s$^2$,maka kecepatan minimum untuk lepas dari planet adalah . . . 
+\pilgani{
+    \item 2 km/s
+    \item $\sqrt{8}$ km/s
+    \item 4 km/s
+    \item 4$\sqrt{10}$km/s
+    \item 16 km/s
+}
+
+\item Tiga buah benda masing-masing 1kg, jika jarak A dan B 1m, B dan C 1 m, dan B ada di siku-siku. Maka besar gaya di C  adalah . , , , 
+\pilgani{
+    \item $\sqrt{2}$ G
+    \item $\sqrt{2+\sqrt{2}}$ G
+    \item $\sqrt{3}$ G
+    \item $ 2 \sqrt{2}$ G
+    \item $\frac{1}{2} \sqrt{5+2\sqrt{2}}$ G
+}
+
+
+
+\item Dua massa masing-masing 20 kg berada pada jarak 8 m. Gaya tarik kedua massa tersebut adalah . . . 
+\pilgani{
+    \item 8,32 $\times 10^{-10}$ 
+    \item 6,24 $\times 10^{-10}$  
+    \item 4,16 $\times 10^{-10}$ 
+    \item 2,08 $\times 10^{-10}$ 
+    \item 1,04  $\times 10^{-10}$ 
+    } 
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+

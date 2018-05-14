@@ -1,0 +1,408 @@
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi\ifnum\tampilkunci=0
+%
+\vspace{2cm}
+%
+\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Usaha dan Energi} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+No callculator allowed !  
+
+\begin{enumerate}
+
+\item Bola 4 kg dilempar ke atas dari atas tanah dengan kelajuan 10 m/s. Maka energi kinetik bola saat berada pada ketinggian 2 m adalah . . . 
+    \pilgan{
+        \item 80 J
+        \item 100 J
+        \item[\kunci{C.}] 120 J
+        \item 140 J
+        \item 160 J }
+        
+        \hide{
+        Karena diketahui kecepatan/kelajuan lalau ditanyakan energi kinetik pada ketinggian (ada EP dan EK) maka gunakan kekekalan
+        \begin{align*}
+        EM_1 &= EM_2 \\
+        \frac{1}{2}mv^2 + mgh_1 &= EP_2 + EK_2\\
+        \frac{1}{2}4(10)^2 + 4.10.0 & = 4.10.2 + EK_2 \\
+        200 & = 80 + EK_2 \\
+        120 &= EK_2
+        \end{align*}
+                 }
+        
+        
+\item Sebuah benda dengan massa 2 kg mula-mula diam. Jika ditarik dengan gaya 4 N ke samping, maka usaha untuk memindahkan benda selama 3 sekon dan besar perpindahannya adalah . . . 
+    \pilgani{
+        \item 20 J dan 5 m
+      \item[\kunci{B.}] 36 J dan 9 m
+        \item 40 J dan 10 m
+        \item 60 J dan 15 m
+        \item 100 J dan 25 m     } 
+        
+        \hide{
+        Usaha bisa dikerjakan menggunakan $W= F.s$ atau $W = \Delta EK = \Delta EP$. Pada soal ini ditarik ke samping, berarti tidak terjadi perubahan ketinggian (energi potensial). Gunakan saja perubahan energi kinetik
+        \begin{align*}
+        W &= \Delta EK \\
+        W &= EK_2 - EK_1\\
+        W &= \frac{1}{2} 2 v^2 - 0\\
+        \end{align*} cari dulu kecepatannya pakai persamaan GLBB
+        \begin{align*}
+        v&=v_o + at\\
+        v&=0+\frac{F}{m}3 \\
+        v&=\frac{4}{2}3=6\\
+        W & = \frac{1}{2} 2 . 6^2 = 36 \text{J}\\
+        W &= F.s \\
+        36 &=4.s\\
+        s&=9 \text{m}
+        \end{align*}}
+
+
+\item Mobil dengan massa 2 ton mula2 diam. Pada saat $t$ mobil tersebut bergerak dengan energi kinetik 4 kJ. Jika mobil tersebut ditarik dengan gaya 400 N, maka waktu $t$ adalah . . . 
+    \pilgani{
+        \item 2 s
+        \item 4 s
+        \item 6 s
+        \item 8 s
+        \item[\kunci{E.}] 10 s
+    } 
+    \hide{
+    \begin{align*}
+    EK&=\frac{1}{2} 2000 v^2  \\
+    4000&=1000.v^2\\
+    v&=2 \text{m/s}\\
+    \phantom{ as }\\
+    v&=v_o+at\\
+    2&=0+\frac{F}{m}t\\
+    2&=0+\frac{400}{2000}t\\
+    t&=10\text{s}
+    \end{align*}
+    
+    }
+
+\item Balok berada pada alas bawah suatu bidang miring. Balok tersebut bermassa 2 kg dan berada pada kecepatan 20 m/s. Bidang miring tersebut membentuk sudut 30$^o$. Jika balok sudah naik bidang miring sejauh 10 m, maka perbandingan energi kinetik dan energi potensial di titik tersebut adalah . . . .
+    \pilgani{
+        \item 1 : 2
+        \item 2 : 1
+        \item[\kunci{C.}] 3 : 1 
+        \item 2 : 3
+        \item 1 : 1     } 
+        
+\hide{
+    Pada saat di bawah, balok punya kecepatan tapi tidak punya energi potensial. Saat dia meluncur sejauh 10 m pada bidang miring, maka ketinggiannya menjadi 5 m (silakan gambar, tinggi adalah sinus). Pertanyaan adalah energi kinetik dan potensial. maka gunakan $EM_1 = EM_2 $
+    \begin{align*}
+    EM_1 &= EM_2 \\
+    \frac{1}{2}mv^2 + mg.0 &= EK + EP \\
+    \frac{1}{2}m.400 &= EK + m.g.5\\
+    200m &= EK + 50m \\
+    EK &= 150m\\
+    EK : EP &= 150 : 50 =  3 : 1 \\
+    \end{align*}
+}
+    
+         
+\item Suatu pegas ditarik dengan gaya 50 N bertambah panjang 2cm. Jika pegas tersebut digunakan untuk melemparkan anak panah sebesar 10 gram, dan ditarik sejauh 10 cm, maka kecepatan yang dihasilkan adalah . . . 
+    \pilgani{
+        \item 10 m/s
+        \item 20 m/s
+        \item 30 m/s
+        \item 40 m/s
+        \item[\kunci{E.}] 50 m/s     }
+\hide{ 
+    Pada kasus ini, energi potensial berubah menjadi energi kinetik
+    \begin{align*}
+    EP&=EK\\
+    \frac{1}{2}k(\Delta x)^2 &= \frac{1}{2}mv^2\\
+    \phantom{aasss}\\
+    F&=k.\Delta x\\
+    \frac{F}{\Delta x } &= k\\
+    \frac{50}{0,02} &=k\\
+    k&=2500 \text{  N/m}\\
+    \phantom{ssdd}\\
+    \frac{1}{2}2500(\Delta x)^2 &= \frac{1}{2}0,01v^2\\
+    2500 &= v^2\\
+    v&=50\text { m/s}
+    \end{align*}
+
+}
+
+
+\item Suatu gaya $\vec{F}=(2\hat{i}+4\hat{j})$ N digunakan untuk menggerakan benda. Benda tersebut berpindah sejauh 10 m ke arah mendatar. Maka usaha yang dihasilkan adalah . . . .
+    \pilgani{
+        \item 1 J
+        \item 2 J
+        \item 10 J
+        \item 15 J
+        \item[\kunci{E.}] 20 J     }  
+
+        \hide{
+        Karena benda mendatar, berarti bergerak dengan persamaan perpindahan $\vec{r}= 10\hat{i}$
+        \begin{align*}
+        W &= \vec{F}\bullet \vec{s}\\
+        W &= (2\hat{i}+4\hat{j})\bullet (10\hat{i})\\
+        W &= 20 \text{ J}
+        \end{align*}
+
+        }
+
+
+\item Sebuah benda didorong dengna gaya 5 N dengan gaya yang membentuk sudut $\theta$ (sin $\theta$ = 3/5). Jika massa benda adalah 5 kg, tentukan usaha setelah mendorong selama 5 sekon . . . .
+	\pilgani{
+	\item 20 J
+	\item 30 J
+	\item[\kunci{C.}] 40 J
+	\item 50 J
+	\item 60 J }   
+\hide{
+Usaha pada soal ini adalah perubahan kecepatan yakni perubahan energi kinetik. 
+\begin{align*}
+    W &= \Delta EK = EK_2-EK_1\\
+    W &= \frac{1}{2}mv^2 - 0\\
+    W &= \frac{1}{2}5.v^2\\
+    \phantom{a}
+    v&=v_o + at\\
+    v&=\frac{F}{m}t\\
+    v&=\frac{(5 \cos \theta)}{5}5\\
+    v&=\frac{4}{5}5=4 \text{ m/s}\\
+    \phantom{b}
+    W &=\frac{1}{2}5.4^2 = 40 \text{ J}
+\end{align*}
+
+}
+	
+\item Sebuah balok bermassa 2 kg menumbuk pegas mendatar yang memiliki tetapan gaya 800 N/m. Balok menekan pegas sejauh 6 cm dari posisi awalnya. Bila lantai licin, kelajuan balok saat menumbuk pegas adalah . . . 
+\pilgani{
+	\item 4 cm/s
+	\item 5 cm/s
+	\item 6 cm/s
+	\item 10 cm/s
+	\item[\kunci{E.}]12 cm/s	} 				 \hide{
+ Balok menmbuk pegas. Berarti balok awalnya mempunyai kecepatan, kemudian berhenti. Energi kinetik berubah menjadi energi potensial pegas.
+ \begin{align*}
+ EK &= EP_{\text{pegas}}\\
+ \frac{1}{2} mv^2 &= \frac{1}{2} k (\Delta x )^2\\
+ \frac{1}{2}2v^2&=\frac{1}{2}800(0,06)^2\\
+ v^2&=\frac{144}{10000}=0,12 \text{ m/s}
+ \end{align*}
+    }
+	
+\item Suatu benda berada di puncak bidang miring dengan ketinggian $h$. Sesaat kemudian benda dilepaskan sehingga menuruni bidang miring. Pada titik A, ketinggian benda adalah $\frac{1}{5} h$. Perbandingan energi potensial dan energi kinetik pada titik tersebut adalah . . .
+\pilgani{
+	\item 1 : 5
+	\item 5 : 1
+	\item [\kunci{C.}]1 : 4
+	\item 4 : 1
+	\item 2 : 3 }  
+    
+\hide{
+Ketinggian berkurang, ditanyakan EP dan EK. Pasti digunakan $EM_1 = EM_2 $
+\begin{align*}
+EM_1 &= EM_2\\
+mgh &= mg(\frac{1}{5}h)+ EK_2\\
+mgh &= \frac{1}{5} mgh + EK_2\\
+mgh &= \frac{1}{5} mgh + \frac{4}{5}mgh\\
+EP_2 : EK_2 &= 1 : 4 
+\end{align*}    
+}
+	
+\item Mobil dengan massa 2000 kg bergerak pada suatu aspal. Panjang lintasan dari A ke B adalah 40 m. Kelajuan awal di A sama dengan 20 m/s dan kelajuan di B sama dengan 5 m/s. Berapa gaya gesek yang dikerjakan permukaan jalan pada ban mobil selama geraknya ? .  . . . N
+\pilgani{
+	\item 2573
+	\item[\kunci{B.}] 9375
+	\item 3573
+	\item 1300
+	\item 8799
+	} 
+\hide{
+Gaya gesek ada hubungannya dengan usaha. Padahal usaha juga ada hubungannya dengan perubahan energi kinetik
+\begin{align*}
+W &= \Delta EK\\
+F.s &= EK_2-EK_1\\
+F.40 &= \frac{1}{2}m(v_2^2-v_1^1)\\
+F.40 &= \frac{1}{2}2000(400-25)\\
+F&=9375 \text { N}
+\end{align*}
+}
+	
+\item Sebuah balok licin meluncur dari tepi jurang dengan kecepatan 20 m/s. Ketinggian jurang adalah 60 m. Maka kelajuan balok saat hampir mengenai tanah adalah . . . . 
+\pilgani{
+	\item 20 m/s
+	\item 20$\sqrt{3}$ m/s
+	\item 30 m/s
+	\item[\kunci{D.}] 40 m/s
+	\item 40$\sqrt{2}$ m/s
+	}
+\hide{
+ Balok awalnya pada ketnggian 60 m, dan bergerak dengan kecepatan 20 m/s. Berarti pada keadaan awal balok punya EP dan EK. Lalu menuruni jurang. Di dasar jurang balok tidak ada ketinggian, hanya kecepatan. Maka digunakan kekekalan energi
+ \begin{align*}
+ EM_1 &= EM_2\\
+ EP_1 + EK_1 &= EK_2 + EP_2\\
+ m.g.h + \frac{1}{2}mv_1^2 &= \frac{1}{2}mv_2^2+0\\
+ 10.60 + \frac{1}{2}20^2&=\frac{1}{2}v_2^2\\
+ v_2^2 &= 1600 \\
+ v_2 &= 40\text{ m/s}
+ \end{align*}}
+	
+\item Sebuah mesin dengan daya 12 kw digunakan untuk menaikkan elevator bermassa 900 kg dari lantai dasar sampai lantai 8. Jika lantai dasar hingga lantai 8 adalah 40 m, maka waktu yang dibutuhkan adalah . . . 
+\pilgani{
+	\item 20 s
+	\item 7,5 s
+	\item 13,3 s
+	\item 35 s
+	\item[\kunci{E.}] 3 s
+	}
+    
+ \hide{
+ \begin{align*}
+ P &= \frac{W}{t}\\
+ t &= \frac{W}{P}\\
+ t &= \frac{\Delta EP}{P}\\
+ t &= \frac{900.10.40}{12000}\\
+ t &= 12\text{ s}
+ \end{align*}
+ }
+	
+\item Mobil bermassa 400 kg dengan kelajuan 36 km/s. Suatu saat mesin dimatikan sehingga berhenti karena gaya gesek pada mobil. Jika gaya gesek tersebut adalah 100 N, maka jarak terjauh yang dapat ditempuh mobil sebelum berhenti adalah . . . .
+\pilgani{
+	\item 50 m
+	\item 100 m
+	\item 150 m
+	\item[\kunci{D.}] 200 m
+	\item 250 m }
+\hide{
+   \begin{align*}
+   W &= \Delta EK\\
+   F.s &= EK_2 - EK_1\\
+   100.s &= 0 - \frac{1}{2}400.10^2\\
+   s&=200\text{ m}
+   \end{align*}
+}
+  
+
+\item Sebuah peti ( 6kg) diterik dengan gaya 50 N ke arah 37$^o$ terhadap horisontal. Sebuah gaya P menghambat gerakkan sebesar 10 N. Maka usaha total pada peti setelah bergerak sejauh 3 m adalah . . . 
+\pilgani{
+	\item 150 J
+	\item 120 J
+	\item[\kunci{C.}] 90 J
+	\item 80 J
+	\item 40 J }
+\hide{
+    Hati-hati pada soal ini,karena gaya ada dua. Gaya yang pertama ada sudutnya. Sehingga yang terpakai adalah $F\cos 37^o$ dan gaya yang menahan yakni 10 N
+    \begin{align*}
+    W &= F.s\\
+    W &= (40-30).3\\
+    W &=90 \text{ N}
+    \end{align*}}
+	
+\item Mobil dengan massa 1 ton melaju dengan kecepatan 36 km/jam menjadi 72 km/jam dalam waktu 10 s. Maka daya keluaran mesin adalah . . .
+\pilgani{
+	\item[\kunci{A.}] 15 kW
+	\item 20 kW
+	\item 25 kW
+	\item 30 kW
+	\item 45 kW } 
+	
+\hide{
+    \begin{align*}
+    W &= \Delta EK = EK_2 - EK_1\\
+    W &= \frac{1}{2}m(v_2^2-v_1^2)\\
+    W &= \frac{1}{2}1000(400-100)\\
+    W &= 150000\text{ J}\\
+    \phantom{2}
+    P&=\frac{W}{t}=\frac{150000}{10}=15 \text{ kW}
+    \end{align*}}
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
