@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.4.20)  17 MAY 2018 01:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.4.20)  17 MAY 2018 01:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,11 +1009,11 @@ Package pdftex.def Info: pic/latul-mom1.jpg used on input line 146.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/latul-mom1.jpg>]
 (./labs_UKK.aux) ) 
 Here is how much of TeX's memory you used:
- 21654 strings out of 495020
- 431537 string characters out of 6181324
- 645852 words of memory out of 5000000
+ 21658 strings out of 495020
+ 431571 string characters out of 6181324
+ 646852 words of memory out of 5000000
  24315 multiletter control sequences out of 15000+600000
- 14176 words of font info for 52 fonts, out of 8000000 for 9000
+ 14306 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,5n,73p,861b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
@@ -1022,7 +1022,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on labs_UKK.pdf (1 page, 58137 bytes).
+Output written on labs_UKK.pdf (1 page, 58036 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
