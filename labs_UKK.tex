@@ -1,0 +1,189 @@
+\documentclass[10pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Latihan Ulangan Momentum} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}
+
+\begin{enumerate}
+\item Dua benda bergerak dengan massa 2 kg dan 4 kg bergerak berlawanan dengan kecepatan 10 m/s dan 15 m/s. Jika setelah tabrakan kecepatan benda 2 kg adalah 2 m/s ke arah berlawanan, maka kecepatan benda 4 kg adalah . . . . 
+\pilgani{
+   \item 9 m/s ke kanan
+   \item 9 m/s ke kiri
+   \item 6 m/s ke kanan
+   \item 6 m/s ke kiri
+   \item 0 m/s
+}
+\vspace{2cm}
+
+\item Benda dengan massa 2 kg bergerak searah sumbu $x$ positif dengan kecepatan 10 m/s, benda lain dengan massa sama bergerak ke arah sumbu $y$ positif dengan kecepatan 20$\sqrt{3}$ m/s. Maka momentum kedua benda tersebut adalah . .  . .  Ns
+\pilgani{
+   \item 10$\sqrt{5}$
+   \item 20$\sqrt{3}$
+   \item 20$\sqrt{5}$
+   \item 30$\sqrt{5}$
+   \item 40}
+\vspace{2cm}
+
+
+\item Massa masing-masing benda adalah 2kg dan 1kg. Benda pertama menabrak benda kedua yang sedang diam dengan kecepatan 3 m/s. Jika terjadi lenting sempurna, maka kecepatan masing-masing setelah tumbukan adalah . . . 
+\pilgani{
+   \item 1 m/s dan -4 m/s
+   \item 1 m/s dan 4 m/s
+   \item 2 m/s dan 2 m/s
+   \item 0 m/s dan 3 m/s
+   \item 3 m/s dan 0 m/s}
+   \vspace{2.5cm}
+
+\item Bola A dan B memiliki massa yang sama. Kedua benda tersebut memiliki 3 m/s dan 4 m/s saling berlawanan. Maka setelah tumbukan kecepatan A dan B adalah . . .
+\pilgani{
+   \item -3 m/s dan -4 m/s
+   \item 2 m/s dan -6 m/s
+   \item -4 m/s dan 3 m/s
+   \item -3 m/s dan 4 m/s
+   \item -6 m/s dan 2 m/s
+}
+\vspace{2cm}
+
+
+
+\item Peluru dengan massa 5 gram ditembakkan pada balok dengan massa 395 gram dalam keadaan diam. Peluru bersarang pada balok dan bergerak bersama dengan kecepatan 2 m/s. Maka kecepatan peluru saat ditembakkan adalah . . .
+\pilgani{
+   \item 400 m/s
+   \item 160 m/s
+   \item 200 m/s
+   \item 100 m/s
+   \item 50 m/s}
+\vspace{1.6cm}
+
+\item Peluru dengan massa 5 gram ditembakkan pada balok dengan massa 1495 gram dalam keadaan diam. Peluru bersarang pada balok dan bergerak bersama dengan dan naik dengan ketinggian 20 cm. Maka kecepatan peluru saat ditembakkan adalah . . .\\
+\includegraphics[width=6cm]{pic/latul-mom1} 
+\pilgani{
+   \item 20 m/s
+   \item 30 m/s
+   \item 300 m/s
+   \item 600 m/s
+   \item 500 m/s
+}
+\vspace{2cm}
+
+
+
+\item Benda 10 kg didorong dengan gaya 300N selama 0,1s. Jika mula-mula diam, kecepatan benda menjadi . . . .
+\pilgani{
+   \item 10 m/s
+   \item 20 m/s
+   \item 30 m/s
+   \item 3 m/s
+   \item 1 m/s }
+\vspace{2cm}
+
+
+
+\item Bola dijatuhkan dari ketinggian 100 cm dan memantul setinggi $h$. Jika koefisien restitusi adalah 0,3 maka tinggi $h$ tersebut adalah . . .
+\pilgani{
+   \item 9 cm
+   \item 3 cm
+   \item 6 cm
+   \item 2 cm
+   \item 1 cm }
+
+\vspace{2cm}
+
+\item Benda A dan B kecepatannya masing-masing 3 dan (-4) m/s. Jika setelah tabrakan menjadi -2m/s dan 1 m/s. Maka koefisien restitusinya adalah . . 
+\vspace{2cm}
+
+\end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+
