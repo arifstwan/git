@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.4.20)  20 MAY 2018 01:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.4.20)  24 MAY 2018 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**kuis_alatoptik.tex
-(./kuis_alatoptik.tex
+**sma68_bahas.tex
+(./sma68_bahas.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls
@@ -658,28 +658,6 @@ tex) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-lines.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-sectors.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-angles.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-protractor.tex)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen184
-\captionmargin@=\dimen185
-\captionwidth=\dimen186
-\caption@tempdima=\dimen187
-\caption@indent=\dimen188
-\caption@parindent=\dimen189
-\caption@hangindent=\dimen190
-)
-\c@ContinuedFloat=\count146
-)
-\c@subfigure=\count147
-\c@subtable=\count148
-)
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
@@ -691,7 +669,7 @@ Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 \XKV@toks=\toks42
 \XKV@tempa@toks=\toks43
 )
-\XKV@depth=\count149
+\XKV@depth=\count146
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -705,50 +683,50 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box41
 )
-\tc@llx=\dimen191
-\tc@lly=\dimen192
-\tc@urx=\dimen193
-\tc@ury=\dimen194
+\tc@llx=\dimen184
+\tc@lly=\dimen185
+\tc@urx=\dimen186
+\tc@ury=\dimen187
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen195
-\adjbox@Height=\dimen196
-\adjbox@Depth=\dimen197
-\adjbox@Totalheight=\dimen198
+\adjbox@Width=\dimen188
+\adjbox@Height=\dimen189
+\adjbox@Depth=\dimen190
+\adjbox@Totalheight=\dimen191
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count150
+\c@checkoddpage=\count147
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box42
-\sift@deathcycles=\count151
-\@vwid@loff=\dimen199
-\@vwid@roff=\dimen200
+\sift@deathcycles=\count148
+\@vwid@loff=\dimen192
+\@vwid@roff=\dimen193
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
-\c@tracingmulticols=\count152
+\c@tracingmulticols=\count149
 \mult@box=\box43
-\multicol@leftmargin=\dimen201
-\c@unbalance=\count153
-\c@collectmore=\count154
-\doublecol@number=\count155
-\multicoltolerance=\count156
-\multicolpretolerance=\count157
-\full@width=\dimen202
-\page@free=\dimen203
-\premulticols=\dimen204
-\postmulticols=\dimen205
+\multicol@leftmargin=\dimen194
+\c@unbalance=\count150
+\c@collectmore=\count151
+\doublecol@number=\count152
+\multicoltolerance=\count153
+\multicolpretolerance=\count154
+\full@width=\dimen195
+\page@free=\dimen196
+\premulticols=\dimen197
+\postmulticols=\dimen198
 \multicolsep=\skip54
 \multicolbaselineskip=\skip55
 \partial@page=\box44
 \last@line=\box45
-\maxbalancingoverflow=\dimen206
+\maxbalancingoverflow=\dimen199
 \mult@rightbox=\box46
 \mult@grightbox=\box47
 \mult@gfirstbox=\box48
@@ -770,18 +748,18 @@ Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
-\c@columnbadness=\count158
-\c@finalcolumnbadness=\count159
-\last@try=\dimen207
-\multicolovershoot=\dimen208
-\multicolundershoot=\dimen209
+\c@columnbadness=\count155
+\c@finalcolumnbadness=\count156
+\last@try=\dimen200
+\multicolovershoot=\dimen201
+\multicolundershoot=\dimen202
 \mult@nat@firstbox=\box67
 \colbreak@box=\box68
-\mc@col@check@num=\count160
+\mc@col@check@num=\count157
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count161
+\c@lips@count=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -797,17 +775,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count162
-\Gm@cntv=\count163
-\c@Gm@tempcnt=\count164
-\Gm@bindingoffset=\dimen210
-\Gm@wd@mp=\dimen211
-\Gm@odd@mp=\dimen212
-\Gm@even@mp=\dimen213
-\Gm@layoutwidth=\dimen214
-\Gm@layoutheight=\dimen215
-\Gm@layouthoffset=\dimen216
-\Gm@layoutvoffset=\dimen217
+\Gm@cnth=\count159
+\Gm@cntv=\count160
+\c@Gm@tempcnt=\count161
+\Gm@bindingoffset=\dimen203
+\Gm@wd@mp=\dimen204
+\Gm@odd@mp=\dimen205
+\Gm@even@mp=\dimen206
+\Gm@layoutwidth=\dimen207
+\Gm@layoutheight=\dimen208
+\Gm@layouthoffset=\dimen209
+\Gm@layoutvoffset=\dimen210
 \Gm@dimlist=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
@@ -824,14 +802,14 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count165
+\etb@tempcnta=\count162
 )
 \tcb@titlebox=\box69
 \tcb@upperbox=\box70
 \tcb@lowerbox=\box71
 \tcb@phantombox=\box72
-\c@tcbbreakpart=\count166
-\c@tcblayer=\count167
+\c@tcbbreakpart=\count163
+\c@tcblayer=\count164
 \tcb@temp=\box73
 \tcb@temp=\box74
 \tcb@temp=\box75
@@ -841,22 +819,22 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
-decorations.pathmorphing.code.tex)) (./kuis_alatoptik.aux)
-\openout1 = `kuis_alatoptik.aux'.
+decorations.pathmorphing.code.tex)) (./sma68_bahas.aux)
+\openout1 = `sma68_bahas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Info: Redefining \microtypecontext on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Info: Redefining \microtypecontext on input line 87.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -873,16 +851,16 @@ Package microtype Info: Loading generic settings for font family
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count168
-\scratchdimen=\dimen218
+\scratchcounter=\count165
+\scratchdimen=\dimen211
 \scratchbox=\box77
-\nofMPsegments=\count169
-\nofMParguments=\count170
+\nofMPsegments=\count166
+\nofMParguments=\count167
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count171
-\MPscratchDim=\dimen219
-\MPnumerator=\count172
-\makeMPintoPDFobject=\count173
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen212
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
 \everyMPtoPDFconversion=\toks46
 ) ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -929,9 +907,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -966,58 +941,52 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<pic/mata.jpg, id=4, 673.01437pt x 362.85562pt>
-File: pic/mata.jpg Graphic file (type jpg)
- <use pic/mata.jpg>
-Package pdftex.def Info: pic/mata.jpg used on input line 95.
-(pdftex.def)             Requested size: 256.0748pt x 138.06374pt.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 97.
-
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 95.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 97.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 97.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 97.
+(Font)              scaled to size 10.42007pt on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 97.
+(Font)              scaled to size 7.91925pt on input line 95.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 97.
+(Font)              scaled to size 6.25204pt on input line 95.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 97.
+(Font)              scaled to size 10.42007pt on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 97.
+(Font)              scaled to size 7.91925pt on input line 95.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 97.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 97.
+(Font)              scaled to size 6.25204pt on input line 95.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 95.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1028,84 +997,37 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<pic/lup.jpg, id=5, 387.4475pt x 176.66pt>
-File: pic/lup.jpg Graphic file (type jpg)
- <use pic/lup.jpg>
-Package pdftex.def Info: pic/lup.jpg used on input line 174.
-(pdftex.def)             Requested size: 227.62204pt x 103.7864pt.
+<pic/68A3.png, id=4, 942.52126pt x 478.78876pt>
+File: pic/68A3.png Graphic file (type png)
+ <use pic/68A3.png>
+Package pdftex.def Info: pic/68A3.png used on input line 110.
+(pdftex.def)             Requested size: 170.71652pt x 86.71887pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/mata.jpg>]
-<pic/mikroskop.jpg, id=18, 722.7pt x 325.215pt>
-File: pic/mikroskop.jpg Graphic file (type jpg)
- <use pic/mikroskop.jpg>
-Package pdftex.def Info: pic/mikroskop.jpg used on input line 232.
-(pdftex.def)             Requested size: 227.62204pt x 102.42838pt.
-
-<pic/mikroskop2.jpg, id=19, 501.875pt x 297.11pt>
-File: pic/mikroskop2.jpg Graphic file (type jpg)
- <use pic/mikroskop2.jpg>
-Package pdftex.def Info: pic/mikroskop2.jpg used on input line 238.
-(pdftex.def)             Requested size: 227.62204pt x 134.75456pt.
-
-[2 <./pic/lup.jpg> <./pic/mikroskop.jpg> <./pic/mikroskop2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
-\OT1/cmss/m/n/10 (+20) di titik fokus lensa
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-[]\OT1/cmss/m/n/10 (+20) Maya, ter-ba-lik,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-[]\OT1/cmss/m/n/10 (+20) Nyata, ter-ba-lik,
- []
-
-[3] <pic/bayangan-mikroskop2.jpg, id=27, 352.31625pt x 189.70876pt>
-File: pic/bayangan-mikroskop2.jpg Graphic file (type jpg)
-
-<use pic/bayangan-mikroskop2.jpg>
-Package pdftex.def Info: pic/bayangan-mikroskop2.jpg used on input line 352.
-(pdftex.def)             Requested size: 199.16928pt x 107.24353pt.
-
-<pic/teropong-bintang.jpg, id=28, 401.5pt x 127.47626pt>
-File: pic/teropong-bintang.jpg Graphic file (type jpg)
-
-<use pic/teropong-bintang.jpg>
-Package pdftex.def Info: pic/teropong-bintang.jpg used on input line 382.
-(pdftex.def)             Requested size: 227.62204pt x 72.27124pt.
-
-<pic/bayangan-teropong.jpg, id=29, 321.2pt x 146.5475pt>
-File: pic/bayangan-teropong.jpg Graphic file (type jpg)
-
-<use pic/bayangan-teropong.jpg>
-Package pdftex.def Info: pic/bayangan-teropong.jpg used on input line 393.
-(pdftex.def)             Requested size: 199.16928pt x 90.87415pt.
- [4 <./pic/bayangan-mikroskop2.jpg> <./pic/teropong-bintang.jpg> <./pic/bayanga
-n-teropong.jpg>] (./kuis_alatoptik.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/68A3.png>] (./sma68_
+bahas.aux) ) 
 Here is how much of TeX's memory you used:
- 22811 strings out of 495020
- 452217 string characters out of 6181324
- 665900 words of memory out of 5000000
- 25414 multiletter control sequences out of 15000+600000
- 19253 words of font info for 80 fonts, out of 8000000 for 9000
+ 21639 strings out of 495020
+ 431203 string characters out of 6181324
+ 637856 words of memory out of 5000000
+ 24305 multiletter control sequences out of 15000+600000
+ 16701 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 69i,11n,73p,867b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/e
-nc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on kuis_alatoptik.pdf (4 pages, 334127 bytes).
+ 69i,10n,73p,864b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
+uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+
+Output written on sma68_bahas.pdf (1 page, 135131 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 8240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

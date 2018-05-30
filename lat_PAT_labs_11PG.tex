@@ -1,0 +1,269 @@
+\documentclass[10pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Latihan PAT Effek Rumah Kaca} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{3}\raggedcolumns
+
+\begin{enumerate}
+\item Radiasi panas matahari yang terkurung dalam atmosfir bumi, serta meningkatnya panas oleh pengikatan CO$_2$ dikenal sebagai . . . 
+\pilgan{
+\item pemanasan global
+\item gas rumah kaca
+\item efek rumah kaca
+\item polusi suara
+\item daya lenting lingkungan}
+
+\item Berikut ini yang \textit{bukan} termasuk akibat dari ``efek rumah kaca'' adalah
+\pilgan{
+\item berkurangnya areal hutan
+\item meningkatnya kematian manusia karena penyakit
+\item naiknya suhu bumi
+\item turunnya permukaan air laut
+\item mencairnya es di daerah kutub}
+
+\item Gas yang timbul dari tempat pembuangan sampah adalah 
+\pilgani{
+\item SO$_2$
+\item O$_3$
+\item H$_2$S
+\item CO$_2$
+\item CH$_4$
+}
+
+\item Mekanisme efek rumah kaca yang normal sebenarnya sangat diperlukan bagi kehidupan karena . .
+\pilgan{
+\item mencegah lubang ozon
+\item mengurangi polusi udara
+\item menghambat radiasi untuk atmosfer bumi
+\item menghangatkan suhu bumi sehingga nyaman untuk ditinggali
+\item menyerap gas rumah kaca sehingga tidak terjadi pemanasan berlebihan }
+
+\item Penggunaan CFC pada berbagai produk dibatasi karena
+\pilgani{
+\item kanker
+\item hujan asam
+\item keracunan
+\item lubang ozon
+\item asap kabut}
+
+
+\item Salah satu dampak pemanasan global adalah
+\pilgan{
+\item penurunan permukaan laut
+\item timbul keracunan CO
+\item terjadi gempa
+\item rusaknya bahan logam karena korosi
+\item timbul penyakit}
+
+\item Penggunaan pendingin (AC, lemari es) berdampak
+\pilgan{
+\item menipisnya lapisan ozon
+\item gangguan pernapasan
+\item menipisnya lapisan stratosfer
+\item menipisnya atmosfer
+\item timbul penyakit kulit}
+
+\item Sumber emisi global yang menghasilkan gas karbon dioksida terbesar adalah
+\pilgan{
+\item kebakaran hutan
+\item pembakaran batu bara
+\item penggunaan gas alam
+\item kendaraan bermotor
+\item kilang minyak}
+
+\item Keuntungan penghijauan antara lain karena tanaman dapat . . .
+\pilgan{
+\item mengikatkan gas N$_2$
+\item menjaga keseimbangan CO$_2$, N$_2$, dan O$_2$
+\item mengikat CO$_2$ di udara dan membebaskan O$_2$
+\item mengubah CO$_2$ menjadi O$_2$
+\item menyerap limbah-limbah industri }
+
+
+\item Berikut ini yang tergolong gas rumah kaca adalah . . 
+\pilgan{
+\item CO$_2$, metana, CFC dan oksigen
+\item CO$_2$, metana, CFC, dan ozon
+\item CO$_2$, metanta, CFC, dan nitrogen
+\item metana, CFC, O$_2$, dan uap air
+\item metana, CFC, uap air dan helium
+}
+
+\item Gas yang dapat menimbulkan hujan asam adalah . . .
+\pilgani {
+\item SO$_2$
+\item O$_3$
+\item H$_2$S
+\item CO$_2$
+\item S$_2$ }
+
+\item Asap kabut dapat menimbulkan kematian karena
+\pilgan{
+   \item menimbulkan stress
+   \item menyebabkan gangguan pernapasan
+   \item menimbulkan kelainan pada jantung
+   \item mengganggu suplai oksigen
+   \item merusak ginjal}
+
+\item Fungsi ozon di lapisan stratosfer adalah
+\pilgan{
+   \item pelindung bumi dan panas matahari
+   \item pelindung bumi dan sinar UV
+   \item pelindung bumi dan pengaruh gerhana matahari
+   \item pelindung bumi dari pengaruh bintang
+   \item semua benar }
+
+\item Meningkatnya kadar karbondioksida di udara dapat menyebabkan 
+\pilgani{
+   \item rusak lapisan ozon
+   \item suhu udara turun
+   \item korosi logam
+   \item hujan asam
+   \item efek rumah kaca}
+
+\item Gas berikut yang dapat mengikat gas ozon sehingga sabuk alam ozon dapat berlubang adalah
+\pilgani{
+   \item CFC
+   \item CH$_4$
+   \item H$_2$O
+   \item CO$_2$
+   \item CO }
+
+\item Ozon dapat dijumpai di atmosfer bumi pada lapisan 
+\pilgan{
+   \item litosfer dan stratosfer
+   \item litosfer dan ionosfer
+   \item stratosfer dan ionosfer
+   \item stratosfer dan troposfer
+   \item troposfer dan ionosfer
+}
+
+\item sinar UV matahari hanya sedikit yang sampai ke permukaan bumi karena disaring gas . . .
+\pilgani{
+   \item O$_3$
+   \item CO
+   \item NH$_3$
+   \item N$_2$
+   \item Ar }
+
+\item Gas yang memiliki kemampuan seribu kali lebih efektif dalam mencegah panas keluar dari atmosfer dibanding karbon dioksida dan meyebabkan berlubangnya lapisan ozon adalah . . .
+\pilgani{
+   \item CO
+   \item CH$_4$
+   \item CFC
+   \item SF$_6$
+   \item NO$_2$
+}
+\item Dampak negatif dari membuang limbah padat sembarangan, \textit{kecuali}
+\pilgan{
+   \item mengurangi keindahan lingkungan 
+   \item menurunkan kualitas tanah
+   \item berkembangnya berbagai jenis penyakit
+   \item kesuburan tanah meningkat
+   \item krisis air bersih}
+
+\item Cara yang dapat dilakuka untuk mencegah meluasnya kerusakan lapisan ozon adalah . . 
+\pilgan{
+   \item tidak melakukan aktivitas
+   \item mengurangi penggunaan bahan ODS
+   \item mengadakan penghijauan
+   \item mengganti bahan bakar yang ramah lingkungan
+   \item tebang pilih kayu hutan
+}
+
+
+\end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+

@@ -1,0 +1,207 @@
+\documentclass[10pt,a4paper]{extarticle}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\renewcommand{\rmdefault}{put}
+\usepackage{enumitem}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{graphicx}
+\usepackage{tikz} 	
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[left=0.7cm,right=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{cancel} \usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathreplacing,calc}
+ \newcommand\coret[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\SetLabelAlign{Center}{\hfil\makebox[1.0em]{#1}\hfil}
+
+%%_------= solusi
+
+
+% Set this =0 to hide, =1 to show
+
+% Set this =0 to hide, =1 to show
+\newtcolorbox{mybox}[1][] { colframe = blue!10, colback = blue!3,boxsep=0pt,left=0.2em, coltitle = blue!20!black, title = \textbf{jawab}, #1, } 
+
+%---------- kunci (jika 1 ) muncul
+\def\tampilkunci{1}
+\newcommand{\hide}[1]{\ifnum\tampilkunci=1
+%
+\begin{mybox}
+ #1
+\end{mybox}
+%
+\vspace{\baselineskip}\fi}
+
+
+
+\newcommand*\cicled[1]{\tikz[baseline=(char.base)]{\node[white, shape=circle, fill=red!80,draw,inner sep=0.5pt](char){#1};}}
+
+\newcommand*\kunci[1]{\ifnum\tampilkunci=1
+%
+\tikz[baseline=(char.base)]{\node[red, shape=circle,draw,inner sep=0.5pt,xshift=2pt](char){#1};}\stepcounter{enumii}
+\fi\ifnum\tampilkunci=0
+%
+\hspace{3pt}#1\stepcounter{enumii}
+%
+\fi}
+
+\newcommand*\silang[1]{\tikz[baseline=(char.base)]{
+\draw[red,thick](-0.2,-0.20)--(0.2,0.2);
+\draw[red,thick](-0.2,0.20)--(0.2,-0.2);
+\node[black](char){#1};
+}}
+
+\newcommand*\centang[1]{\tikz[baseline=(char.base)]{
+\draw[red, very thick](-0.2,0.1)--(-0.1,0)--(0.2,0.3);
+\node(char){#1};
+}}
+
+\newcommand*\merah[1]{
+\textcolor{red}{#1}}
+\newcommand*\pilgan[1]{
+\begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center] #1 
+\end{enumerate}}
+\newcommand*\pernyataan[1]{
+\begin{enumerate}[label=(\arabic*), itemsep=0pt,topsep=0pt,leftmargin=*] #1 
+\end{enumerate}}
+
+\newcommand{\pilgani}[1]{                            \vspace{-0.3cm}\begin{multicols}{2}
+ \begin{enumerate}[label=\Alph*., itemsep=0pt,topsep=0pt,leftmargin=*,align=Center]#1                     \end{enumerate}
+ \phantom{ini cuma sapi, wedus, dan ayam}
+ \end{multicols}}
+
+
+\begin{document}
+
+
+ \textbf{Latihan Ulangan Gerak Harmonik} \phantom{ini nama siswa yang aaamengerjakan soal kuis ini }  
+
+\begin{multicols*}{2}\raggedcolumns
+
+\begin{enumerate}
+\item Sebuah bola bermassa 100 gram mula-mula diam, dipukul dengan tongkat sehingga kecepatannya menjadi 40 m/s. Besarnya impuls dari gaya pemukul tersebut adalah . . . . 
+\pilgani{
+   \item 4 Ns
+   \item 10 Ns
+   \item 40 Ns
+   \item 100 Ns
+   \item 400 Ns
+}
+\vspace{1.5cm}
+
+\item Benda bermassa 0,2 kg bergerak dari kiri ke kanan dengan kecepatan 6 m/s kemudian mengenai dinding selama 0,01 sekon dan kecepatannya berubah menjadi 10 m/s. Besar gaya yag diberikan dindin adalah . . . 
+\pilgani{
+   \item 80 N
+   \item 320 N
+   \item 8 N
+   \item 32 N
+   \item 0 N
+}
+\vspace{1.5cm}
+
+\item  Sebuah benda diberi gaya sebesar 1.000 N dalam waktu singkat, yakni 0,05 s. Jika perubahan yang terjadi adalah dari 2 m/s menjadi 6 m/s. Maka massa dari benda tersebut adalah . . .
+\pilgani{
+   \item 2,5 kg
+   \item 5 kg
+   \item 25 kg
+   \item 12,5 kg
+   \item 6,25 kg
+}
+\vspace{1.5cm}
+
+\item Bola mendatar dengan massa 10 gram dilemparkan mendatar dengan kecepatan 15 m/s dan memantul dengan kecepatan 5 m/s. Maka impuls yang dikerjakan dinding adalah . . .
+\pilgani{
+   \item 0,2 Ns
+   \item 0,1 Ns
+   \item 0,02 Ns
+   \item 0,01 Ns
+   \item 2 Ns
+}
+\vspace{1.5cm}
+
+\item Perhatikan gambar berikut! \\
+\begin{tikzpicture}
+\draw[<-, thick] (0,3) -- (0,0) -- (7,0);
+\draw (1,0) -- (2,2) -- (4,2) -- (5,0);
+\foreach \x in {1,2,4,5}
+{
+   \node  at (\x,-0.3){\x};
+}
+\foreach \y in {1,2}
+{
+   \node  at (-0.3,\y){\y};
+}
+\draw[dashed](0,2) --(2,2);
+\node at (0, 3.5) {$F$};
+\node at (7.5,0){$t$ (s)};
+\end{tikzpicture}
+Maka besar Impuls pada 3kg benda yang diberi gaya seperti pada grafik tersebut adalah . . .
+\pilgani{
+   \item 3 Ns
+   \item 5 Ns
+   \item 6 Ns
+   \item 10 Ns
+   \item 12 Ns
+}
+\vspace{2cm}
+\item Suatu benda bermassa 10 kg mula-mula bergerak ke arah kanan dengan kecepatan 4 m/s. Setelah dipukul dengan gaya 100 N ke arah sebaliknya, benda tersebut berbalik arah dengan kecepatan 6 m/s. Waktu kontak gaya kepada benda adalah . . .
+\pilgani{
+   \item 0.1 s
+   \item 0.2 s
+   \item 0.3 s
+   \item 1 s
+   \item 2 s
+}
+\vspace{1.5cm}
+\item Benda bermassa 0,2 kg mula-mula diam, kemudian dipukul dengan gaya $F$ selama 0,1 s sehingga kecepatannya 150 m/s. Maka besar gaya $F$ adalah . . 
+\pilgani{
+   \item 100 N
+   \item 200 N
+   \item 300 N
+   \item 400 N
+   \item 500 N
+}
+\vspace{1.5cm}
+
+\item Benda A bermassa 0,6 kg bergerak mendekatan benda B bermassa 0,4 kg dalam keadaan diam. Benda A melaju dengan kecepatan 2 m/s. Setelah tumbukan, kedua benda menjadi satu. Kelajuan kedua benda adalah . . 
+\pilgani{
+   \item 1,2 m/s
+   \item 2,4 m/s
+   \item 3,6 m/s
+   \item 4,8 m/s
+   \item 5,4 m/s
+   }
+   \vspace{1.5cm}
+
+\item Dua buah bola A dan B bermassa sama. Bola A bergerak ke kanan dengan kecepatan 30 m/s dan bola B 10 m/s ke kiri. Terjadi tumbukan lenting sempurna, maka kecepatan bola A dan B setelah tumbukan adalah . . .
+\pilgan{
+   \item 30 m/s kiri dan 10 m/s kanan
+   \item 10 m/s kiri dan 30 m/s kanan
+   \item 10 m/s kanan dan 30 m/s kiri
+   \item 20 m/s kanan dan 20 m/s kiri
+   \item 20 m/s kiri dan 20 m/s kanan
+}
+\vspace{1cm}
+\item 
+
+\end{enumerate}
+\end{multicols*}\end{document}
+
+
+
+
+
+
